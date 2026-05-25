@@ -21,7 +21,7 @@ st.subheader("Dott.ssa Graziana Ancona - Biologa Nutrizionista")
 
 col1, col2 = st.columns([1, 2])
 with col1:
-    st.image("https://img.icons8.com/color/240/pregnant--v1.png", width=200)
+    st.image("foto.jpg", width=200)
 with col2:
     st.markdown(
         """
