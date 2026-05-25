@@ -7,6 +7,31 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+with open("background.jpg", "rb") as f:
+    bg_bytes = f.read()
+import base64
+bg_b64 = base64.b64encode(bg_bytes).decode()
+
+st.markdown(
+    f"""
+<style>
+.stApp {{
+    background-image: url(data:image/png;base64,{bg_b64});
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}}
+.block-container {{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    margin-top: 1rem;
+}}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
 with st.sidebar:
     st.image("https://img.icons8.com/color/96/healthy-food--v1.png", width=80)
     st.markdown("### Dott.ssa Graziana Ancona")
