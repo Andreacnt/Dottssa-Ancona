@@ -7,26 +7,21 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-with open("background.jpg", "rb") as f:
-    bg_bytes = f.read()
-import base64
-bg_b64 = base64.b64encode(bg_bytes).decode()
-
 st.markdown(
-    f"""
+    """
 <style>
-.stApp {{
-    background-image: url(data:image/png;base64,{bg_b64});
-    background-size: cover;
-    background-position: center;
+.stApp {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 30%, #a5d6a7 60%, #81c784 100%);
     background-attachment: fixed;
-}}
-.block-container {{
-    background-color: rgba(255, 255, 255, 0.85);
+}
+.block-container {
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
     padding: 2rem 3rem;
     margin-top: 1rem;
-}}
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+header {background-color: transparent !important;}
 </style>
 """,
     unsafe_allow_html=True,
