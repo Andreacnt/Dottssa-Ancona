@@ -210,7 +210,7 @@ def pagina_contatti():
                 }).encode()
                 try:
                     urllib.request.urlopen(
-                        "https://formspree.io/f/ILTUO_ENDPOINT_QUI",
+                        "https://formspree.io/f/mykqakwp",
                         data=data
                     )
                     st.success("Grazie! Ti ricontatterò al più presto.")
