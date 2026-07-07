@@ -86,7 +86,10 @@ def pagina_chisono():
     st.title("Chi Sono")
     col_foto, col_testo = st.columns([1, 2])
     with col_foto:
-        st.image("img/profilo.jpg", width=250)
+        st.markdown(
+            '<img src="img/profilo.jpg" style="border-radius: 50%; width: 220px; height: 220px; object-fit: cover;">',
+            unsafe_allow_html=True
+        )
     with col_testo:
         st.markdown("""
     Sono la **Dott.ssa Graziana Ancona**, Biologa Nutrizionista a Parma,
