@@ -4,7 +4,7 @@ st.set_page_config(
     page_title="Dott.ssa Graziana Ancona - Biologa Nutrizionista",
     page_icon="🥗",
     layout="centered",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="collapsed",
 )
 
 st.markdown("""
