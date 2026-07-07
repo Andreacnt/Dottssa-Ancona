@@ -15,8 +15,7 @@ header { background: transparent !important; }
 h1 { font-size: 2rem; } h2 { font-size: 1.6rem; } h3 { font-size: 1.3rem; } h1, h2, h3 { color: #5B7B55; }
 .stButton button { background: #8A9A5B; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
 .stButton button:hover { background: #6B7F5E; }
-.foto-tonda { text-align: center; }
-.foto-tonda img { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; }
+img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; }
 section[data-testid="stSidebar"] { background: #5B7B55; }
 section[data-testid="stSidebar"] * { color: white; }
 section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: white; }
@@ -91,9 +90,7 @@ def pagina_chisono():
     st.title("Chi Sono")
     col_foto, col_testo = st.columns([1, 2])
     with col_foto:
-        st.markdown('<div class="foto-tonda">', unsafe_allow_html=True)
-        st.image("img/profilo.jpg", width=200)
-        st.markdown('</div>', unsafe_allow_html=True)
+        st.image("https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/profilo.jpg", width=200)
     with col_testo:
         st.markdown("""
     Sono la **Dott.ssa Graziana Ancona**, Biologa Nutrizionista a Parma,
