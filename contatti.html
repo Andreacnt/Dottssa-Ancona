@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti — Dott.ssa Graziana Ancona</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">Dott.ssa <span>Ancona</span></a>
+      <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="chi-sono.html">Chi Sono</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="blog.html">Blog</a>
+        <a href="contatti.html" class="active">Contatti</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Contatti</h1>
+      <p>Prenota una consulenza o chiedi informazioni</p>
+    </div>
+  </div>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="contatti-grid">
+        <div class="contatti-info">
+          <h3>📍 Dove sono</h3>
+          <p>Senigallia (AN) — studio in centro<br>Consulenze online su tutta Italia</p>
+
+          <h3>📞 Contattami</h3>
+          <p>
+            <strong>Email:</strong> <a href="mailto:graziana.ancona@gmail.com" style="color:var(--green-700);">graziana.ancona@gmail.com</a><br>
+            <strong>Cell:</strong> +39 333 789 1234
+          </p>
+
+          <h3>📅 Orari</h3>
+          <p>
+            Lun-Ven: 9:00 – 19:00<br>
+            Sab: su appuntamento
+          </p>
+
+          <h3>💬 Primo contatto gratuito</h3>
+          <p>Una chiacchierata conoscitiva senza impegno per capire le tue esigenze e starti più vicino.</p>
+        </div>
+        <div class="contatti-form">
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="nome">Nome e Cognome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Telefono (opzionale)</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="messaggio">Il tuo messaggio</label>
+            <textarea id="messaggio" name="messaggio" required placeholder="Ciao, vorrei prenotare una consulenza perché..."></textarea>
+
+            <button type="submit">Invia richiesta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>Dott.ssa Graziana Ancona</strong> — Biologa Nutrizionista</p>
+      <div class="social">
+        <a href="mailto:graziana.ancona@gmail.com">✉️</a>
+      </div>
+      <p>Senigallia (AN) | © 2026 Tutti i diritti riservati</p>
+    </div>
+  </footer>
+</body>
+</html>
