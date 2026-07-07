@@ -1,6 +1,6 @@
 # Dott.ssa Graziana Ancona — Nutrizionista
 
-Sito web professionale della Dott.ssa Graziana Ancona, Biologa Nutrizionista.
+Sito web professionale con Streamlit.
 
 ## Pagine
 
@@ -10,14 +10,12 @@ Sito web professionale della Dott.ssa Graziana Ancona, Biologa Nutrizionista.
 - **Blog** — Articoli e guide
 - **Contatti** — Richiedi appuntamento
 
-## Come usare
+## Avvio locale
 
-Apri `index.html` nel browser o visita su GitHub Pages.
+```bash
+streamlit run app.py
+```
 
 ## Tecnologie
 
-`HTML` `CSS`
-
-## Licenza
-
-Tutti i diritti riservati.
+`Python` `Streamlit`
