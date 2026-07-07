@@ -87,7 +87,7 @@ def pagina_chisono():
     col_foto, col_testo = st.columns([1, 2])
     with col_foto:
         st.markdown(
-            '<img src="img/profilo.jpg" style="border-radius: 50%; width: 220px; height: 220px; object-fit: cover;">',
+            '<div style="text-align:center"><img src="img/profilo.jpg" style="border-radius: 50%; width: 220px; height: 220px; object-fit: cover; background: #E8F0E0; padding: 4px;"></div>',
             unsafe_allow_html=True
         )
     with col_testo:
