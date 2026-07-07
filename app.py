@@ -9,13 +9,13 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-.stApp { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); }
+.stApp { background: linear-gradient(135deg, #E8F0E0 0%, #D4E0CC 100%); }
 .block-container { background: rgba(255,255,255,0.92); border-radius: 20px; padding: 2rem 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 1rem; }
 header { background: transparent !important; }
-h1, h2, h3 { color: #14532d; }
-.stButton button { background: #16a34a; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
-.stButton button:hover { background: #15803d; }
-section[data-testid="stSidebar"] { background: #14532d; }
+h1, h2, h3 { color: #5B7B55; }
+.stButton button { background: #8A9A5B; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
+.stButton button:hover { background: #6B7F5E; }
+section[data-testid="stSidebar"] { background: #5B7B55; }
 section[data-testid="stSidebar"] * { color: white; }
 section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: white; }
 .st-emotion-cache-1gv3huu { color: white !important; }
