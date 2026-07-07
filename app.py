@@ -4,7 +4,7 @@ st.set_page_config(
     page_title="Dott.ssa Graziana Ancona - Biologa Nutrizionista",
     page_icon="🥗",
     layout="centered",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="expanded",
 )
 
 st.markdown("""
@@ -13,22 +13,27 @@ st.markdown("""
 .block-container { background: rgba(255,255,255,0.92); border-radius: 20px; padding: 2rem 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 1rem; }
 header { background: transparent !important; }
 h1, h2, h3 { color: #14532d; }
-.stTabs [data-baseweb="tab-list"] { gap: 8px; }
-.stTabs [data-baseweb="tab"] { font-weight: 500; }
 .stButton button { background: #16a34a; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
 .stButton button:hover { background: #15803d; }
+section[data-testid="stSidebar"] { background: #14532d; }
+section[data-testid="stSidebar"] * { color: white; }
+section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: white; }
+.st-emotion-cache-1gv3huu { color: white !important; }
+[data-testid="stSidebarNav"] span { color: white !important; }
+.st-emotion-cache-1v0mbdj { color: white !important; }
+[data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; transition: all 0.2s; }
+[data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); }
+[data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
 </style>
 """, unsafe_allow_html=True)
 
-with st.container():
-    st.markdown("### 🥗 Dott.ssa Graziana Ancona")
-    st.markdown("*Biologa Nutrizionista a Parma*")
+mini_guide = [
+    # Aggiungi qui i tuoi post: (titolo, descrizione, url_instagram)
+    # Esempio:
+    # ("Colazione sana", "Idee per una colazione equilibrata", "https://www.instagram.com/p/..."),
+]
 
-st.markdown("---")
-
-home, chisono, servizi, percorso, approccio, blog, contatti = st.tabs(["🏠 Home", "👩‍⚕️ Chi Sono", "📋 Di cosa mi occupo", "📊 Percorso", "🌿 Approccio", "📖 Blog", "📬 Contatti"])
-
-with home:
+def pagina_home():
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
     st.markdown("""
     Accompagno persone di ogni età in percorsi nutrizionali personalizzati,
@@ -43,7 +48,7 @@ with home:
     💻 **Consulenze online:** su appuntamento
     """)
 
-with chisono:
+def pagina_chisono():
     st.title("Chi Sono")
     col_foto, col_testo = st.columns([1, 2])
     with col_foto:
@@ -74,7 +79,7 @@ with chisono:
         - **Data iscrizione:** 29/07/2024
         """)
 
-with servizi:
+def pagina_servizi():
     st.title("Di cosa mi occupo")
     st.markdown("Mi occupo di consulenza nutrizionale personalizzata per:")
 
@@ -109,7 +114,7 @@ with servizi:
         ✅ Educazione alimentare e prevenzione
         """)
 
-with percorso:
+def pagina_percorso():
     st.title("Il percorso nutrizionale")
     st.markdown("""
     Ogni percorso inizia con una valutazione approfondita della persona e del suo stato di salute.
@@ -132,7 +137,7 @@ with percorso:
     indicato dalla bilancia.
     """)
 
-with approccio:
+def pagina_approccio():
     st.title("Il mio approccio")
     st.markdown("""
     La parola *dieta* deriva dal greco *dìaita* e significa **stile di vita**.
@@ -151,13 +156,7 @@ with approccio:
     che possa essere mantenuto nel tempo.
     """)
 
-mini_guide = [
-    # Aggiungi qui i tuoi post: (titolo, descrizione, url_instagram)
-    # Esempio:
-    # ("Colazione sana", "Idee per una colazione equilibrata", "https://www.instagram.com/p/..."),
-]
-
-with blog:
+def pagina_blog():
     st.title("Mini Guide dal Blog")
     st.markdown("Segui i miei consigli su Instagram e trovali qui raccolti per te.")
 
@@ -169,10 +168,10 @@ with blog:
             with cols[i % 2]:
                 st.markdown(f"### 📌 {titolo}")
                 st.markdown(descrizione)
-                st.link_button("Apri su Instagram →", url)
+                st.link_button("Apri su Instagram \u2192", url)
                 st.markdown("---")
 
-with contatti:
+def pagina_contatti():
     st.title("Contatti")
 
     col1, col2 = st.columns(2)
@@ -217,6 +216,17 @@ with contatti:
                     st.success("Grazie! Ti ricontatterò al più presto.")
                 except:
                     st.error("Errore nell'invio. Scrivimi direttamente a anconagraziana@gmail.com")
+
+pg = st.navigation([
+    st.Page(pagina_home, title="Home", icon="🏠", default=True),
+    st.Page(pagina_chisono, title="Chi Sono", icon="👩‍⚕️"),
+    st.Page(pagina_servizi, title="Di cosa mi occupo", icon="📋"),
+    st.Page(pagina_percorso, title="Percorso", icon="📊"),
+    st.Page(pagina_approccio, title="Approccio", icon="🌿"),
+    st.Page(pagina_blog, title="Blog", icon="📖"),
+    st.Page(pagina_contatti, title="Contatti", icon="📬"),
+])
+pg.run()
 
 st.markdown("---")
 st.markdown("<div style='text-align:center;color:#6b7280;font-size:0.9rem'>© 2026 Dott.ssa Graziana Ancona — Biologa Nutrizionista — P.IVA 03425440736</div>", unsafe_allow_html=True)
