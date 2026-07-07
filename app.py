@@ -45,7 +45,11 @@ with home:
 
 with chisono:
     st.title("Chi Sono")
-    st.markdown("""
+    col_foto, col_testo = st.columns([1, 2])
+    with col_foto:
+        st.image("img/profilo.jpg", width=250)
+    with col_testo:
+        st.markdown("""
     Sono la **Dott.ssa Graziana Ancona**, Biologa Nutrizionista a Parma,
     laureata in Scienze della Nutrizione Umana e altamente formata in nutrizione
     sportiva e benessere femminile.
