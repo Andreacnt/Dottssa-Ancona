@@ -85,7 +85,7 @@ def pagina_home():
     """)
 
     st.markdown("""
-    📍 **Consulenze in presenza:** sabato su appuntamento presso Centro Rigenesis, Parma
+    📍 **Consulenze in presenza:** sabato su appuntamento presso Centro Rigenesis, Viale La Grola 5/B, Parma
 
     💻 **Consulenze online:** su appuntamento
     """)
@@ -219,7 +219,9 @@ def pagina_contatti():
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("### 📍 Dove sono")
-        st.markdown("**In presenza:** Centro Rigenesis, Parma")
+        st.markdown("**In presenza:** Centro Rigenesis")
+        st.markdown("Viale La Grola, 5/B — 43125 Parma")
+        st.markdown("[Apri su Google Maps](https://maps.google.com/maps?q=Viale+La+Grola+5/B+Parma+43125)")
         st.markdown("**Online:** su appuntamento")
 
         st.markdown("### 🕐 Orari")
@@ -257,6 +259,12 @@ def pagina_contatti():
                         st.error(f"Errore {r.status_code}. Scrivimi direttamente a anconagraziana@gmail.com")
                 except Exception as e:
                     st.error(f"Errore: {e}. Scrivimi a anconagraziana@gmail.com")
+
+    st.markdown("---")
+    st.markdown(
+        '<iframe src="https://www.google.com/maps?q=Viale+La+Grola+5%2FB+Parma+43125&output=embed" width="100%" height="320" style="border:0;border-radius:16px;"></iframe>',
+        unsafe_allow_html=True
+    )
 
 pg = st.navigation([
     st.Page(pagina_home, title="Home", icon="🏠", default=True),
