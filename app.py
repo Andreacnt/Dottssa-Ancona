@@ -23,9 +23,8 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 section[data-testid="stSidebar"] { background: #5B7B55; }
 section[data-testid="stSidebar"] * { color: white; font-family: 'Inter', sans-serif; }
 section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: white; }
-[data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; transition: all 0.2s; }
-[data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); transform: translateX(3px); }
-[data-testid="stSidebarNavItems"] a:active { transform: scale(0.96); background: rgba(255,255,255,0.2); }
+[data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; transition: background 0.2s; }
+[data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); }
 [data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
 .servizio-card { background: #f5f9f2; border-radius: 16px; padding: 1.2rem 1.5rem; margin: 0.5rem 0; border-left: 4px solid #8A9A5B; }
 .divider { text-align: center; color: #B2C9AB; font-size: 1.2rem; margin: 0.5rem 0; }
