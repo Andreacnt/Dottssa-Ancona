@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Dott.ssa Graziana Ancona - Biologa Nutrizionista",
-    page_icon="🥗",
+    page_icon="img/logo.jpg",
     layout="centered",
     initial_sidebar_state="collapsed",
 )
@@ -15,7 +15,7 @@ header { background: transparent !important; }
 h1 { font-size: 2rem; } h2 { font-size: 1.6rem; } h3 { font-size: 1.3rem; } h1, h2, h3 { color: #5B7B55; }
 .stButton button { background: #8A9A5B; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
 .stButton button:hover { background: #6B7F5E; }
-.foto-tonda { display: inline-block; border-radius: 50%; overflow: hidden; background: #E8F0E0; padding: 3px; }
+.foto-tonda { text-align: center; }
 .foto-tonda img { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; }
 section[data-testid="stSidebar"] { background: #5B7B55; }
 section[data-testid="stSidebar"] * { color: white; }
@@ -26,7 +26,7 @@ section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, sectio
 @media (max-width: 768px) {
   .block-container { padding: 0.8rem 1rem !important; font-size: 1rem !important; margin-top: 0.5rem !important; }
   h1 { font-size: 1.4rem !important; } h2 { font-size: 1.2rem !important; } h3 { font-size: 1.1rem !important; }
-  .foto-tonda img { width: 160px !important; height: 160px !important; }
+  .foto-tonda img { width: 160px !important; }
   [data-testid="column"] { min-width: 100% !important; flex: 0 0 100% !important; padding: 0.3rem 0 !important; }
 }
 </style>
@@ -92,7 +92,7 @@ def pagina_chisono():
     col_foto, col_testo = st.columns([1, 2])
     with col_foto:
         st.markdown('<div class="foto-tonda">', unsafe_allow_html=True)
-        st.image("img/profilo.jpg", width=220)
+        st.image("img/profilo.jpg", width=200)
         st.markdown('</div>', unsafe_allow_html=True)
     with col_testo:
         st.markdown("""
