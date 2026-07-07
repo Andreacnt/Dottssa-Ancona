@@ -201,21 +201,20 @@ def pagina_contatti():
             messaggio = st.text_area("Messaggio", placeholder="Ciao, vorrei prenotare una consulenza perché...")
             inviato = st.form_submit_button("Invia richiesta")
             if inviato:
-                import urllib.parse, urllib.request
-                data = urllib.parse.urlencode({
-                    "nome": nome,
-                    "email": email,
-                    "telefono": telefono,
-                    "messaggio": messaggio
-                }).encode()
                 try:
-                    urllib.request.urlopen(
-                        "https://formspree.io/f/mykqakwp",
-                        data=data
-                    )
-                    st.success("Grazie! Ti ricontatterò al più presto.")
-                except:
-                    st.error("Errore nell'invio. Scrivimi direttamente a anconagraziana@gmail.com")
+                    import requests
+                    r = requests.post("https://formspree.io/f/mykqakwp", data={
+                        "nome": nome,
+                        "email": email,
+                        "telefono": telefono,
+                        "messaggio": messaggio
+                    })
+                    if r.ok:
+                        st.success("Grazie! Ti ricontatterò al più presto.")
+                    else:
+                        st.error(f"Errore {r.status_code}. Scrivimi direttamente a anconagraziana@gmail.com")
+                except Exception as e:
+                    st.error(f"Errore: {e}. Scrivimi a anconagraziana@gmail.com")
 
 pg = st.navigation([
     st.Page(pagina_home, title="Home", icon="🏠", default=True),
