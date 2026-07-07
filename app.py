@@ -10,9 +10,9 @@ st.set_page_config(
 st.markdown("""
 <style>
 .stApp { background: linear-gradient(135deg, #E8F0E0 0%, #D4E0CC 100%); }
-.block-container { background: rgba(255,255,255,0.92); border-radius: 20px; padding: 2rem 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 1rem; }
+.block-container { background: rgba(255,255,255,0.92); border-radius: 20px; padding: 2rem 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 1rem; font-size: 1.1rem; }
 header { background: transparent !important; }
-h1, h2, h3 { color: #5B7B55; }
+h1 { font-size: 2rem; } h2 { font-size: 1.6rem; } h3 { font-size: 1.3rem; } h1, h2, h3 { color: #5B7B55; }
 .stButton button { background: #8A9A5B; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
 .stButton button:hover { background: #6B7F5E; }
 section[data-testid="stSidebar"] { background: #5B7B55; }
