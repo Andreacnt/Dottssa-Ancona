@@ -26,7 +26,7 @@ with st.container():
 
 st.markdown("---")
 
-home, chisono, servizi, percorso, approccio, modalita, blog, contatti = st.tabs(["🏠 Home", "👩‍⚕️ Chi Sono", "📋 Di cosa mi occupo", "📊 Percorso", "🌿 Approccio", "📍 Modalità", "📖 Blog", "📬 Contatti"])
+home, chisono, servizi, percorso, approccio, blog, contatti = st.tabs(["🏠 Home", "👩‍⚕️ Chi Sono", "📋 Di cosa mi occupo", "📊 Percorso", "🌿 Approccio", "📖 Blog", "📬 Contatti"])
 
 with home:
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
@@ -145,15 +145,6 @@ with approccio:
 
     L'obiettivo non è seguire una dieta perfetta, ma trovare un equilibrio
     che possa essere mantenuto nel tempo.
-    """)
-
-with modalita:
-    st.title("Modalità di consulenza")
-    st.markdown("""
-    🏢 **Consulenze nutrizionali in presenza**
-    presso il **Centro Rigenesis di Parma**
-
-    💻 **Consulenze online** su appuntamento
     """)
 
 with blog:
