@@ -179,8 +179,13 @@ with contatti:
         st.markdown("Sabato su appuntamento")
 
         st.markdown("### 📞 Contattami")
-        st.markdown("**Cell:** 334 2780151")
-        st.markdown("**Email:** info@centrorigenesis.it")
+        st.markdown("**Cell:** 327 0022153")
+        st.markdown("**Email:** anconagraziana@gmail.com")
+        st.markdown("""
+        **Social:**
+        🔗 [LinkedIn](https://linkedin.com/in/anconagraziana)
+        📸 [Instagram](https://www.instagram.com/nutri_su_insta/)
+        """)
 
     with col2:
         st.markdown("### 💬 Richiedi informazioni")
