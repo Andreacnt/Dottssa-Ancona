@@ -29,12 +29,10 @@ st.markdown("---")
 home, chisono, servizi, blog, contatti = st.tabs(["🏠 Home", "👩‍⚕️ Chi Sono", "📋 Servizi", "📖 Blog", "📬 Contatti"])
 
 with home:
-    st.title("Raggiungi il tuo benessere con un'alimentazione su misura")
+    st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
     st.markdown("""
-    Sono la **Dott.ssa Graziana Ancona**, Biologa Nutrizionista a Parma.
     Accompagno persone di ogni età in percorsi nutrizionali personalizzati,
     costruiti sulle esigenze individuali e basati sulle più recenti evidenze scientifiche.
-
     Il mio obiettivo è aiutare ogni persona a sviluppare un rapporto più sereno, consapevole
     e sostenibile con l'alimentazione, migliorando il proprio stato di salute e il benessere generale.
     """)
@@ -62,8 +60,11 @@ with chisono:
 
     with st.expander("📜 Dati professionali"):
         st.markdown("""
-        - **P. IVA:** 1234567890
-        - **Iscrizione Albo:** Biologi n. 12345
+        - **P. IVA:** 03425440736
+        - **Iscrizione:** Ordine dei Biologi della Puglia e della Basilicata
+        - **Sezione:** A
+        - **Numero:** PuB_A5285
+        - **Data iscrizione:** 29/07/2024
         """)
 
     with st.expander("🌿 Il mio approccio"):
@@ -146,4 +147,4 @@ with contatti:
                 st.success("Grazie! Ti ricontatterò al più presto.")
 
 st.markdown("---")
-st.markdown("<div style='text-align:center;color:#6b7280;font-size:0.9rem'>© 2026 Dott.ssa Graziana Ancona — Biologa Nutrizionista — P.IVA 1234567890 — Albo Biologi n. 12345</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align:center;color:#6b7280;font-size:0.9rem'>© 2026 Dott.ssa Graziana Ancona — Biologa Nutrizionista — P.IVA 03425440736</div>", unsafe_allow_html=True)
