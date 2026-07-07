@@ -15,7 +15,7 @@ header { background: transparent !important; }
 h1 { font-size: 2rem; } h2 { font-size: 1.6rem; } h3 { font-size: 1.3rem; } h1, h2, h3 { color: #5B7B55; }
 .stButton button { background: #8A9A5B; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
 .stButton button:hover { background: #6B7F5E; }
-img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; }
+img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; object-position: top !important; }
 section[data-testid="stSidebar"] { background: #5B7B55; }
 section[data-testid="stSidebar"] * { color: white; }
 section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: white; }
