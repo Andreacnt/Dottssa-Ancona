@@ -24,6 +24,14 @@ section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, sectio
 [data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; transition: all 0.2s; }
 [data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); }
 [data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
+@media (max-width: 768px) {
+  .block-container { padding: 0.8rem 1rem !important; font-size: 1rem !important; margin-top: 0.5rem !important; }
+  h1 { font-size: 1.4rem !important; } h2 { font-size: 1.2rem !important; } h3 { font-size: 1.1rem !important; }
+  .stImage img { max-width: 100% !important; }
+  img[style*="border-radius"] { width: 160px !important; height: 160px !important; }
+  [data-testid="column"] { min-width: 100% !important; flex: 0 0 100% !important; padding: 0.3rem 0 !important; }
+  [data-testid="stImage"] { max-width: 100% !important; }
+}
 </style>
 """, unsafe_allow_html=True)
 
