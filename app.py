@@ -28,9 +28,42 @@ section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, sectio
 """, unsafe_allow_html=True)
 
 mini_guide = [
-    # Aggiungi qui i tuoi post: (titolo, descrizione, url_instagram)
-    # Esempio:
-    # ("Colazione sana", "Idee per una colazione equilibrata", "https://www.instagram.com/p/..."),
+    ("Latte, latti fermentati e yogurt: simili, ma non uguali",
+     "Scopri le differenze tra questi alimenti e come sceglierli al meglio.",
+     "https://www.instagram.com/p/DU5_E9BihXJ/"),
+    ("Cereali: energia quotidiana e base della dieta mediterranea",
+     "Il carburante giusto per affrontare la giornata con energia.",
+     "https://www.instagram.com/p/DU0yDUJio73/"),
+    ("Mangiare a colori è uno dei modi più semplici per prendersi cura della salute",
+     "Ogni colore sulla tavola porta benefici diversi al tuo organismo.",
+     "https://www.instagram.com/p/DUK5SU8Cg4t/"),
+    ("Stagionalità: salute, gusto e sostenibilità",
+     "Un elemento chiave per fare la spesa in modo consapevole.",
+     "https://www.instagram.com/p/DUDYE2pivoC/"),
+    ("Frutta e verdura: un tripudio di salute e colore",
+     "Più ne mettete nel piatto, più il vostro corpo vi ringrazierà.",
+     "https://www.instagram.com/p/DT-NU3zCu5w/"),
+    ("Pizza: molto più di un piatto",
+     "Si può inserire in un'alimentazione equilibrata? Certamente sì.",
+     "https://www.instagram.com/p/DTm3eihCnPa/"),
+    ("A Natale non si sgarra",
+     "Consigli per godersi le feste senza sensi di colpa.",
+     "https://www.instagram.com/p/DS2INCSCjOj/"),
+    ("I legumi: piccoli, ma potentissimi",
+     "Colorati, versatili e ricchi di nutrienti, da consumare almeno 4 volte a settimana.",
+     "https://www.instagram.com/p/DRkNOkbig0P/"),
+    ("I carboidrati dopo le 18 fanno ingrassare?",
+     "Sfatiamo insieme uno dei miti più comuni sull'alimentazione.",
+     "https://www.instagram.com/p/DOgk-NfCg5t/"),
+    ("Il Piatto del Mangiar Sano",
+     "Un metodo semplice e visivo per costruire pasti equilibrati.",
+     "https://www.instagram.com/p/DOd3N62igRl/"),
+    ("Tornare alla routine senza stress",
+     "Consigli per riprendere le buone abitudini dopo le ferie.",
+     "https://www.instagram.com/p/DN2llBd1Mx8/"),
+    ("La parola dieta deriva dal greco e significa stile di vita",
+     "Il mio approccio alla nutrizione: equilibrio, non privazione.",
+     "https://www.instagram.com/p/DNkhhUPsWlb/"),
 ]
 
 def pagina_home():
