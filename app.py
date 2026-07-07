@@ -67,7 +67,7 @@ mini_guide = [
 ]
 
 def pagina_home():
-    st.image("https://media.licdn.com/dms/image/v2/D4D16AQGIytoXPD4lPg/profile-displaybackgroundimage-shrink_350_1400/B4DZqEG5B2G8AY-/0/1763152992555?e=1784764800&v=beta&t=NPXWExXz94XRnZf9FZyo-0G2t-QUdM_C5nyzsG8f6J8", use_container_width=True)
+    st.image("img/sfondo.jpg", use_container_width=True)
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
     st.markdown("""
     Accompagno persone di ogni età in percorsi nutrizionali personalizzati,
