@@ -37,50 +37,10 @@ with home:
 
     Il mio obiettivo è aiutare ogni persona a sviluppare un rapporto più sereno, consapevole
     e sostenibile con l'alimentazione, migliorando il proprio stato di salute e il benessere generale.
-
-    ✨ Credo che la nutrizione non debba essere vissuta come una rinuncia, ma come uno strumento
-    per prendersi cura di sé, ritrovare equilibrio e valorizzare il proprio benessere nel lungo termine.
     """)
 
-    with st.expander("🍏 Di cosa mi occupo"):
-        col1, col2 = st.columns(2)
-        with col1:
-            st.markdown("""
-            ✅ Dimagrimento e ricomposizione corporea
-            ✅ Nutrizione femminile:
-              - PCOS (Sindrome dell'Ovaio Policistico)
-              - Endometriosi
-              - Gravidanza e Allattamento
-              - Menopausa
-            ✅ Patologie metaboliche diagnosticate
-            ✅ Alimentazione vegetariana e vegana
-            """)
-        with col2:
-            st.markdown("""
-            ✅ Allergie e intolleranze alimentari
-            ✅ Disturbi gastrointestinali:
-              - Colon irritabile (IBS)
-              - MICI
-              - Disturbi digestivi e intestinali
-            ✅ Nutrizione sportiva
-            ✅ Educazione alimentare e prevenzione
-            """)
-
-    with st.expander("📊 Il percorso nutrizionale"):
-        st.markdown("""
-        Ogni percorso inizia con una valutazione approfondita della persona e del suo stato di salute.
-
-        Durante la prima consulenza vengono analizzati:
-        - Abitudini alimentari e stile di vita
-        - Obiettivi personali e bisogni specifici
-        - Storia clinica e nutrizionale
-        - Composizione corporea tramite:
-          - Analisi bioimpedenziometrica (BIA)
-          - Plicometria
-          - Rilevazione delle circonferenze corporee
-        """)
-
-    st.markdown("📍 Consulenze in presenza a Parma · Online su appuntamento")
+    st.markdown("📍 Consulenze in presenza presso **Centro Rigenesis, Parma** · Online su appuntamento")
+    st.markdown("🕐 Sabato su appuntamento")
 
 with chisono:
     st.title("Chi Sono")
@@ -89,8 +49,8 @@ with chisono:
     laureata in Scienze della Nutrizione Umana e altamente formata in nutrizione
     sportiva e benessere femminile.
 
-    Ogni persona ha esigenze uniche, e il mio lavoro è ascoltare, capire e costruire
-    insieme un percorso su misura.
+    ✨ Credo che la nutrizione non debba essere vissuta come una rinuncia, ma come uno strumento
+    per prendersi cura di sé, ritrovare equilibrio e valorizzare il proprio benessere nel lungo termine.
     """)
 
     with st.expander("🎓 Formazione"):
@@ -98,6 +58,12 @@ with chisono:
         - Laurea in Scienze della Nutrizione Umana
         - Formazione in nutrizione sportiva
         - Formazione in benessere femminile
+        """)
+
+    with st.expander("📜 Dati professionali"):
+        st.markdown("""
+        - **P. IVA:** 1234567890
+        - **Iscrizione Albo:** Biologi n. 12345
         """)
 
     with st.expander("🌿 Il mio approccio"):
@@ -161,6 +127,9 @@ with contatti:
         st.markdown("**In presenza:** Centro Rigenesis, Parma")
         st.markdown("**Online:** su appuntamento")
 
+        st.markdown("### 🕐 Orari")
+        st.markdown("Sabato su appuntamento")
+
         st.markdown("### 📞 Contattami")
         st.markdown("**Cell:** 334 2780151")
         st.markdown("**Email:** info@centrorigenesis.it")
@@ -177,4 +146,4 @@ with contatti:
                 st.success("Grazie! Ti ricontatterò al più presto.")
 
 st.markdown("---")
-st.markdown("<div style='text-align:center;color:#6b7280;font-size:0.9rem'>© 2026 Dott.ssa Graziana Ancona — Biologa Nutrizionista — Parma</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align:center;color:#6b7280;font-size:0.9rem'>© 2026 Dott.ssa Graziana Ancona — Biologa Nutrizionista — P.IVA 1234567890 — Albo Biologi n. 12345</div>", unsafe_allow_html=True)
