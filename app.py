@@ -21,9 +21,11 @@ h2 { font-size: 1.6rem; } h3 { font-size: 1.3rem; }
 .stButton button:active { transform: scale(0.96); }
 img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; object-position: top !important; }
 section[data-testid="stSidebar"] { background: #5B7B55; }
-section[data-testid="stSidebar"] * { color: white; font-family: 'Inter', sans-serif; }
+section[data-testid="stSidebar"] * { color: white; }
 section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: white; }
-[data-testid="stSidebarNavItems"] a { outline: none !important; }
+[data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; transition: background 0.2s; outline: none !important; }
+[data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); }
+[data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
 .servizio-card { background: #f5f9f2; border-radius: 16px; padding: 1.2rem 1.5rem; margin: 0.5rem 0; border-left: 4px solid #8A9A5B; }
 .divider { text-align: center; color: #B2C9AB; font-size: 1.2rem; margin: 0.5rem 0; }
 .footer { text-align: center; color: #6b7280; font-size: 0.9rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; }
