@@ -37,8 +37,11 @@ with home:
     e sostenibile con l'alimentazione, migliorando il proprio stato di salute e il benessere generale.
     """)
 
-    st.markdown("📍 Consulenze in presenza presso **Centro Rigenesis, Parma** · Online su appuntamento")
-    st.markdown("🕐 Sabato su appuntamento")
+    st.markdown("""
+    📍 **Consulenze in presenza:** sabato su appuntamento presso Centro Rigenesis, Parma
+
+    💻 **Consulenze online:** su appuntamento
+    """)
 
 with chisono:
     st.title("Chi Sono")
