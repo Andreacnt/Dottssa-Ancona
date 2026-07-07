@@ -151,20 +151,26 @@ with approccio:
     che possa essere mantenuto nel tempo.
     """)
 
-with blog:
-    st.title("Blog")
-    st.info("Articoli in arrivo! Presto troverai qui consigli e approfondimenti sulla nutrizione.")
+mini_guide = [
+    # Aggiungi qui i tuoi post: (titolo, descrizione, url_instagram)
+    # Esempio:
+    # ("Colazione sana", "Idee per una colazione equilibrata", "https://www.instagram.com/p/..."),
+]
 
-    col1, col2, col3 = st.columns(3)
-    for col, emoji, title in zip(
-        [col1, col2, col3],
-        ["🥦", "📝", "📖"],
-        ["Consigli alimentari", "Guide pratiche", "Mini Guide"]
-    ):
-        with col:
-            st.markdown(f"### {emoji}")
-            st.markdown(f"**{title}**")
-            st.markdown("*Prossimamente*")
+with blog:
+    st.title("Mini Guide dal Blog")
+    st.markdown("Segui i miei consigli su Instagram e trovali qui raccolti per te.")
+
+    if not mini_guide:
+        st.info("Aggiungi i tuoi post nell'array `mini_guide` in cima al file per farli apparire qui.")
+    else:
+        cols = st.columns(2)
+        for i, (titolo, descrizione, url) in enumerate(mini_guide):
+            with cols[i % 2]:
+                st.markdown(f"### 📌 {titolo}")
+                st.markdown(descrizione)
+                st.link_button("Apri su Instagram →", url)
+                st.markdown("---")
 
 with contatti:
     st.title("Contatti")
@@ -196,7 +202,21 @@ with contatti:
             messaggio = st.text_area("Messaggio", placeholder="Ciao, vorrei prenotare una consulenza perché...")
             inviato = st.form_submit_button("Invia richiesta")
             if inviato:
-                st.success("Grazie! Ti ricontatterò al più presto.")
+                import urllib.parse, urllib.request
+                data = urllib.parse.urlencode({
+                    "nome": nome,
+                    "email": email,
+                    "telefono": telefono,
+                    "messaggio": messaggio
+                }).encode()
+                try:
+                    urllib.request.urlopen(
+                        "https://formspree.io/f/ILTUO_ENDPOINT_QUI",
+                        data=data
+                    )
+                    st.success("Grazie! Ti ricontatterò al più presto.")
+                except:
+                    st.error("Errore nell'invio. Scrivimi direttamente a anconagraziana@gmail.com")
 
 st.markdown("---")
 st.markdown("<div style='text-align:center;color:#6b7280;font-size:0.9rem'>© 2026 Dott.ssa Graziana Ancona — Biologa Nutrizionista — P.IVA 03425440736</div>", unsafe_allow_html=True)
