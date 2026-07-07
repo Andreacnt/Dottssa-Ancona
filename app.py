@@ -24,6 +24,9 @@ section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, sectio
 [data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; transition: all 0.2s; }
 [data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); }
 [data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
+.foto-crop { text-align: center; }
+.foto-crop img { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; }
+.foto-crop [data-testid="stImage"] { display: inline-block; border-radius: 50%; background: #E8F0E0; padding: 3px; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -86,10 +89,9 @@ def pagina_chisono():
     st.title("Chi Sono")
     col_foto, col_testo = st.columns([1, 2])
     with col_foto:
-        st.markdown(
-            '<div style="text-align:center"><img src="img/profilo.jpg" style="border-radius: 50%; width: 220px; height: 220px; object-fit: cover; background: #E8F0E0; padding: 4px;"></div>',
-            unsafe_allow_html=True
-        )
+        st.markdown('<div class="foto-crop">', unsafe_allow_html=True)
+        st.image("img/profilo.jpg", width=220)
+        st.markdown('</div>', unsafe_allow_html=True)
     with col_testo:
         st.markdown("""
     Sono la **Dott.ssa Graziana Ancona**, Biologa Nutrizionista a Parma,
