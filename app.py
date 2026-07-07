@@ -4,7 +4,6 @@ st.set_page_config(
     page_title="Dott.ssa Graziana Ancona - Biologa Nutrizionista",
     page_icon="🥗",
     layout="centered",
-    initial_sidebar_state="collapsed",
 )
 
 st.markdown("""
@@ -15,22 +14,14 @@ header { background: transparent !important; }
 h1 { font-size: 2rem; } h2 { font-size: 1.6rem; } h3 { font-size: 1.3rem; } h1, h2, h3 { color: #5B7B55; }
 .stButton button { background: #8A9A5B; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
 .stButton button:hover { background: #6B7F5E; }
-section[data-testid="stSidebar"] { background: #5B7B55; }
-section[data-testid="stSidebar"] * { color: white; }
-section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: white; }
-.st-emotion-cache-1gv3huu { color: white !important; }
-[data-testid="stSidebarNav"] span { color: white !important; }
-.st-emotion-cache-1v0mbdj { color: white !important; }
-[data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; transition: all 0.2s; }
-[data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); }
-[data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
+.foto-tonda { display: inline-block; border-radius: 50%; overflow: hidden; background: #E8F0E0; padding: 3px; }
+.foto-tonda img { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; }
+.stSelectbox [data-baseweb="select"] { border-radius: 50px; }
 @media (max-width: 768px) {
   .block-container { padding: 0.8rem 1rem !important; font-size: 1rem !important; margin-top: 0.5rem !important; }
   h1 { font-size: 1.4rem !important; } h2 { font-size: 1.2rem !important; } h3 { font-size: 1.1rem !important; }
-  .stImage img { max-width: 100% !important; }
-  img[style*="border-radius"] { width: 160px !important; height: 160px !important; }
+  .foto-tonda img { width: 160px !important; height: 160px !important; }
   [data-testid="column"] { min-width: 100% !important; flex: 0 0 100% !important; padding: 0.3rem 0 !important; }
-  [data-testid="stImage"] { max-width: 100% !important; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -94,13 +85,9 @@ def pagina_chisono():
     st.title("Chi Sono")
     col_foto, col_testo = st.columns([1, 2])
     with col_foto:
-        import base64
-        with open("img/profilo.jpg", "rb") as f:
-            img_b64 = base64.b64encode(f.read()).decode()
-        st.markdown(
-            f'<img src="data:image/jpeg;base64,{img_b64}" style="border-radius: 50%; width: 220px; height: 220px; object-fit: cover; background: #E8F0E0;">',
-            unsafe_allow_html=True
-        )
+        st.markdown('<div class="foto-tonda">', unsafe_allow_html=True)
+        st.image("img/profilo.jpg", width=220)
+        st.markdown('</div>', unsafe_allow_html=True)
     with col_testo:
         st.markdown("""
     Sono la **Dott.ssa Graziana Ancona**, Biologa Nutrizionista a Parma,
@@ -264,16 +251,22 @@ def pagina_contatti():
                 except Exception as e:
                     st.error(f"Errore: {e}. Scrivimi a anconagraziana@gmail.com")
 
-pg = st.navigation([
-    st.Page(pagina_home, title="Home", icon="🏠", default=True),
-    st.Page(pagina_chisono, title="Chi Sono", icon="👩‍⚕️"),
-    st.Page(pagina_servizi, title="Di cosa mi occupo", icon="📋"),
-    st.Page(pagina_percorso, title="Percorso", icon="📊"),
-    st.Page(pagina_approccio, title="Approccio", icon="🌿"),
-    st.Page(pagina_blog, title="Blog", icon="📖"),
-    st.Page(pagina_contatti, title="Contatti", icon="📬"),
-])
-pg.run()
+menu_items = {
+    "🏠 Home": pagina_home,
+    "👩‍⚕️ Chi Sono": pagina_chisono,
+    "📋 Di cosa mi occupo": pagina_servizi,
+    "📊 Percorso": pagina_percorso,
+    "🌿 Approccio": pagina_approccio,
+    "📖 Blog": pagina_blog,
+    "📬 Contatti": pagina_contatti,
+}
+if "pagina" not in st.session_state:
+    st.session_state.pagina = "🏠 Home"
+st.markdown("<div style='text-align:center;font-size:1.3rem;font-weight:600;color:#5B7B55'>🥗 Dott.ssa Graziana Ancona</div>", unsafe_allow_html=True)
+scelta = st.selectbox("", list(menu_items.keys()), label_visibility="collapsed", index=list(menu_items.keys()).index(st.session_state.pagina))
+st.session_state.pagina = scelta
+st.markdown("---")
+menu_items[st.session_state.pagina]()
 
 st.markdown("---")
 st.markdown("<div style='text-align:center;color:#6b7280;font-size:0.9rem'>© 2026 Dott.ssa Graziana Ancona — Biologa Nutrizionista — P.IVA 03425440736</div>", unsafe_allow_html=True)
