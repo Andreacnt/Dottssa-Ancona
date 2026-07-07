@@ -13,19 +13,23 @@ st.markdown("""
 .block-container { background: rgba(255,255,255,0.92); border-radius: 20px; padding: 2rem 3rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 1rem; font-size: 1.1rem; }
 header { background: transparent !important; }
 h1 { font-size: 2rem; } h2 { font-size: 1.6rem; } h3 { font-size: 1.3rem; } h1, h2, h3 { color: #5B7B55; }
-.stButton button { background: #8A9A5B; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; }
+.stButton button { background: #8A9A5B; color: white; border-radius: 50px; padding: 8px 32px; font-weight: 600; border: none; transition: all 0.2s; }
 .stButton button:hover { background: #6B7F5E; }
 img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; object-position: top !important; }
 section[data-testid="stSidebar"] { background: #5B7B55; }
 section[data-testid="stSidebar"] * { color: white; }
 section[data-testid="stSidebar"] h1, section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: white; }
 [data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; transition: all 0.2s; }
-[data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); }
+[data-testid="stSidebarNavItems"] a:hover { background: rgba(255,255,255,0.1); transform: translateX(3px); }
+[data-testid="stSidebarNavItems"] a:active { transform: scale(0.96); background: rgba(255,255,255,0.2); }
 [data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
+.stButton button:active { transform: scale(0.96); }
+.stLinkButton a { transition: all 0.2s; display: inline-block; }
+.stLinkButton a:active { transform: scale(0.96); }
 @media (max-width: 768px) {
   .block-container { padding: 0.8rem 1rem !important; font-size: 1rem !important; margin-top: 0.5rem !important; }
   h1 { font-size: 1.4rem !important; } h2 { font-size: 1.2rem !important; } h3 { font-size: 1.1rem !important; }
-  .foto-tonda img { width: 160px !important; }
+  img[src*="profilo.jpg"] { width: 160px !important; }
   [data-testid="column"] { min-width: 100% !important; flex: 0 0 100% !important; padding: 0.3rem 0 !important; }
 }
 </style>
