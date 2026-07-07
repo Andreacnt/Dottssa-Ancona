@@ -86,32 +86,32 @@ def pagina_servizi():
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("""
-        ✅ Dimagrimento e ricomposizione corporea
+        ⚖️ Dimagrimento e ricomposizione corporea
 
-        ✅ Nutrizione femminile:
+        🌸 Nutrizione femminile:
         • PCOS (Sindrome dell'Ovaio Policistico)
         • Endometriosi
         • Gravidanza
         • Allattamento
         • Menopausa
 
-        ✅ Patologie metaboliche diagnosticate
+        🩺 Patologie metaboliche diagnosticate
 
-        ✅ Alimentazione vegetariana e vegana
+        🌱 Alimentazione vegetariana e vegana
         """)
     with col2:
         st.markdown("""
-        ✅ Allergie e intolleranze alimentari
+        🌾 Allergie e intolleranze alimentari
 
-        ✅ Disturbi gastrointestinali:
+        🥗 Disturbi gastrointestinali:
         • Colon irritabile (IBS)
         • MICI
         • Disturbi digestivi e intestinali
         • Altre problematiche dell'apparato digerente
 
-        ✅ Nutrizione sportiva
+        💪 Nutrizione sportiva
 
-        ✅ Educazione alimentare e prevenzione
+        📚 Educazione alimentare e prevenzione
         """)
 
 def pagina_percorso():
