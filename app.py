@@ -26,7 +26,7 @@ with st.container():
 
 st.markdown("---")
 
-home, chisono, servizi, blog, contatti = st.tabs(["🏠 Home", "👩‍⚕️ Chi Sono", "📋 Servizi", "📖 Blog", "📬 Contatti"])
+home, chisono, servizi, percorso, approccio, modalita, blog, contatti = st.tabs(["🏠 Home", "👩‍⚕️ Chi Sono", "📋 Di cosa mi occupo", "📊 Percorso", "🌿 Approccio", "📍 Modalità", "📖 Blog", "📬 Contatti"])
 
 with home:
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
@@ -67,42 +67,91 @@ with chisono:
         - **Data iscrizione:** 29/07/2024
         """)
 
-    with st.expander("🌿 Il mio approccio"):
+with servizi:
+    st.title("Di cosa mi occupo")
+    st.markdown("Mi occupo di consulenza nutrizionale personalizzata per:")
+
+    col1, col2 = st.columns(2)
+    with col1:
         st.markdown("""
-        La parola *dieta* deriva dal greco *dìaita* e significa **stile di vita**.
+        ✅ Dimagrimento e ricomposizione corporea
 
-        Il mio lavoro non si basa su regole rigide o privazioni, ma sulla costruzione
-        di abitudini alimentari realistiche, equilibrate e sostenibili nel tempo.
+        ✅ Nutrizione femminile:
+        • PCOS (Sindrome dell'Ovaio Policistico)
+        • Endometriosi
+        • Gravidanza
+        • Allattamento
+        • Menopausa
 
-        💚 Una corretta alimentazione non dovrebbe togliere, ma aggiungere:
-        **Benessere, Energia, Consapevolezza, Salute, Qualità della vita**.
+        ✅ Patologie metaboliche diagnosticate
 
-        L'obiettivo non è seguire una dieta perfetta, ma trovare un equilibrio
-        che possa essere mantenuto nel tempo.
+        ✅ Alimentazione vegetariana e vegana
+        """)
+    with col2:
+        st.markdown("""
+        ✅ Allergie e intolleranze alimentari
+
+        ✅ Disturbi gastrointestinali:
+        • Colon irritabile (IBS)
+        • MICI
+        • Disturbi digestivi e intestinali
+        • Altre problematiche dell'apparato digerente
+
+        ✅ Nutrizione sportiva
+
+        ✅ Educazione alimentare e prevenzione
         """)
 
-with servizi:
-    st.title("Servizi")
+with percorso:
+    st.title("Il percorso nutrizionale")
+    st.markdown("""
+    Ogni percorso inizia con una valutazione approfondita della persona e del suo stato di salute.
 
-    servizi_list = [
-        ("🥗", "Consulenza nutrizionale individuale", "Percorso personalizzato con piano alimentare su misura e follow-up periodici."),
-        ("📉", "Dimagrimento e ricomposizione corporea", "Perdita di peso sana con monitoraggio BIA, plicometria e circonferenze."),
-        ("👩", "Nutrizione femminile", "Supporto per PCOS, endometriosi, gravidanza, allattamento e menopausa."),
-        ("🩺", "Patologie metaboliche", "Alimentazione mirata per diabete, colesterolo, ipertensione, sindrome metabolica."),
-        ("🌱", "Alimentazione vegetariana e vegana", "Piani bilanciati per chi sceglie un'alimentazione a base vegetale."),
-        ("🤧", "Allergie e intolleranze", "Educazione alimentare per gestire allergie e intolleranze senza rinunce."),
-        ("🫀", "Disturbi gastrointestinali", "Supporto per IBS, MICI, disturbi digestivi e intestinali."),
-        ("🏃", "Nutrizione sportiva", "Piani per ottimizzare performance, recupero e composizione corporea."),
-        ("👶", "Educazione alimentare", "Prevenzione e corretta alimentazione per tutte le età."),
-        ("💻", "Consulenza online", "Stessa cura, comodamente da casa tua.")
-    ]
+    Durante la prima consulenza vengono analizzati:
 
-    cols = st.columns(2)
-    for i, (icon, title, desc) in enumerate(servizi_list):
-        with cols[i % 2]:
-            st.markdown(f"**{icon} {title}**")
-            st.markdown(f"{desc}")
-            st.markdown("")
+    🔹 Abitudini alimentari e stile di vita
+
+    🔹 Obiettivi personali e bisogni specifici
+
+    🔹 Storia clinica e nutrizionale
+
+    🔹 **Composizione corporea** tramite:
+    - Analisi bioimpedenziometrica (BIA)
+    - Plicometria
+    - Rilevazione delle circonferenze corporee
+
+    Questi strumenti consentono di monitorare nel tempo massa muscolare, massa grassa,
+    stato di idratazione e progressi del percorso, andando oltre il semplice numero
+    indicato dalla bilancia.
+    """)
+
+with approccio:
+    st.title("Il mio approccio")
+    st.markdown("""
+    La parola *dieta* deriva dal greco *dìaita* e significa **stile di vita**.
+
+    Per questo motivo il mio lavoro non si basa su regole rigide o privazioni,
+    ma sulla costruzione di abitudini alimentari realistiche, equilibrate e sostenibili nel tempo.
+
+    Ogni piano nutrizionale viene personalizzato per adattarsi alla quotidianità,
+    alle preferenze alimentari e agli obiettivi della persona.
+
+    💚 Una corretta alimentazione non dovrebbe togliere, ma aggiungere:
+
+    **Benessere — Energia — Consapevolezza — Salute — Qualità della vita**
+
+    L'obiettivo non è seguire una dieta perfetta, ma trovare un equilibrio
+    che possa essere mantenuto nel tempo.
+    """)
+
+with modalita:
+    st.title("Modalità di consulenza")
+    st.markdown("""
+    🏢 **Consulenze nutrizionali in presenza**
+    presso il **Centro Rigenesis di Parma**
+
+    💻 **Consulenze online** su appuntamento
+    """)
 
 with blog:
     st.title("Blog")
