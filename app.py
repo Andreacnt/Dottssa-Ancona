@@ -225,9 +225,10 @@ def pagina_contatti():
 
     with col2:
         st.markdown("### 💬 Scrivimi")
-        st.markdown("Compila il form qui sotto e ti rispondo direttamente via email.")
+        st.markdown("Mi contatti direttamente:")
         st.markdown(
-            f'<a href="mailto:anconagraziana@gmail.com?subject=Richiesta%20consulenza&body=Ciao%20Dott.ssa%20Ancona%2C%0A%0AVorrei%20prenotare%20una%20consulenza%20perché...%0A%0ANome%3A%0ATelefono%3A" style="display:inline-block;background:#8A9A5B;color:white;border-radius:50px;padding:12px 32px;font-weight:600;text-decoration:none;margin-top:0.5rem;">✉️ Scrivimi via email</a>',
+            '<a href="mailto:anconagraziana@gmail.com?subject=Richiesta%20consulenza&body=Ciao%20Dott.ssa%20Ancona%2C%0A%0AVorrei%20prenotare%20una%20consulenza%20perché...%0A%0ANome%3A%0ATelefono%3A" style="display:inline-block;background:#8A9A5B;color:white;border-radius:50px;padding:12px 32px;font-weight:600;text-decoration:none;margin:0.3rem;">✉️ Scrivimi via email</a>'
+            '<a href="https://wa.me/393270022153?text=Ciao%20Dott.ssa%20Ancona%2C%20vorrei%20informazioni%20per%20una%20consulenza" target="_blank" style="display:inline-block;background:#25D366;color:white;border-radius:50px;padding:12px 32px;font-weight:600;text-decoration:none;margin:0.3rem;">💬 Scrivimi su WhatsApp</a>',
             unsafe_allow_html=True
         )
 
