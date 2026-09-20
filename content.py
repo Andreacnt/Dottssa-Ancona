@@ -8,7 +8,7 @@ MAIL_URL = "mailto:anconagraziana@gmail.com?subject=Richiesta%20consulenza&body=
 PRENOTA_URL = "https://www.miodottore.it/profilo/graziana-ancona"
 BOX_PRENOTAZIONI_TITOLO = "Info e Prenotazioni"
 PRENOTA_BTN = "Prenota subito"
-WHATSAPP_BTN = "Scrivimi su WhatsApp"
+WHATSAPP_BTN = "Invia un messaggio"
 WHATSAPP_LOGO = "https://cdn.simpleicons.org/whatsapp/white"
 MIODOTTORE_LOGO = "https://www.google.com/s2/favicons?domain=www.miodottore.it&sz=128"
 IG_URL = "https://www.instagram.com/nutri_su_insta/"
