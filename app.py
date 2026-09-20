@@ -145,6 +145,7 @@ def pagina_percorso():
    **Cosa faremo insieme: la prima consulenza**
 
 Ogni percorso nutrizionale è un viaggio che parte da te. Nel nostro primo incontro effettueremo una valutazione approfondita della tua storia e del tuo stato di salute attuale, analizzando ogni dettaglio per costruire un piano davvero personalizzato.
+
 Durante la prima consulenza valuteremo:
 • **Abitudini e Stile di Vita:** Per capire i tuoi ritmi quotidiani e adattare il piano alla tua routine.
 • **Obiettivi e Bisogni:** I traguardi che desideri raggiungere e le tue necessità specifiche.
