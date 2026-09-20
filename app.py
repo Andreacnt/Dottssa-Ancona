@@ -101,19 +101,17 @@ def pagina_chisono():
         st.image("https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/profilo.jpg", width=200)
     with col_testo:
         st.markdown("""
-    Sono la **Dott.ssa Graziana Ancona**, Biologa Nutrizionista a Parma,
-    laureata in Scienze della Nutrizione Umana e altamente formata in nutrizione
-    sportiva e benessere femminile.
-
-    ✨ Credo che la nutrizione non debba essere vissuta come una rinuncia, ma come uno strumento
-    per prendersi cura di sé, ritrovare equilibrio e valorizzare il proprio benessere nel lungo termine.
+   Sono la Dott.ssa Graziana Ancona, Biologa Nutrizionista. Dopo la laurea in Scienze della Nutrizione Umana, ho focalizzato le mie competenze e la mia formazione nell'ambito della salute della donna in ogni fase della vita e della nutrizione per lo sport.
+   
+✨ Metto le mie competenze al tuo servizio per dimostrarti che mangiare bene è un atto di cura, non di sacrificio. Il mio obiettivo è darti gli strumenti scientifici e pratici per valorizzare il tuo corpo, trovare la tua energia migliore e investire sulla tua salute.
     """)
 
     with st.expander("🎓 Formazione"):
         st.markdown("""
-        - Laurea in Scienze della Nutrizione Umana
-        - Formazione in nutrizione sportiva
-        - Formazione in benessere femminile
+        - Laurea in Scienze Gastronomiche
+        - Laurea im Scienze della Nutrizione Umana 
+        - Scuola di Nutrizione e Integrazione nello Sport (sanis)
+        - Esperta in benessere e salute della donna
         """)
 
     with st.expander("📜 Dati professionali"):
@@ -144,24 +142,16 @@ def pagina_servizi():
 def pagina_percorso():
     st.title("Il percorso nutrizionale")
     st.markdown("""
-    Ogni percorso inizia con una valutazione approfondita della persona e del suo stato di salute.
+   **Cosa faremo insieme: la prima consulenza**
 
-    Durante la prima consulenza vengono analizzati:
-
-    🔹 Abitudini alimentari e stile di vita
-
-    🔹 Obiettivi personali e bisogni specifici
-
-    🔹 Storia clinica e nutrizionale
-
-    🔹 **Composizione corporea** tramite:
-    - Analisi bioimpedenziometrica (BIA)
-    - Plicometria
-    - Rilevazione delle circonferenze corporee
-
-    Questi strumenti consentono di monitorare nel tempo massa muscolare, massa grassa,
-    stato di idratazione e progressi del percorso, andando oltre il semplice numero
-    indicato dalla bilancia.
+Ogni percorso nutrizionale è un viaggio che parte da te. Nel nostro primo incontro effettueremo una valutazione approfondita della tua storia e del tuo stato di salute attuale, analizzando ogni dettaglio per costruire un piano davvero personalizzato.Durante la prima consulenza valuteremo:
+• **Abitudini e Stile di Vita:** Per capire i tuoi ritmi quotidiani e adattare il piano alla tua routine.
+• **Obiettivi e Bisogni:** I traguardi che desideri raggiungere e le tue necessità specifiche.
+• **Storia Clinica e Nutrizionale:** Il tuo punto di partenza medico e i percorsi già affrontati.
+• **Composizione Corporea Avanzata:** Una fotografia precisa del tuo corpo che eseguiamo attraverso:
+    ◦ *Analisi Bioimpedenziometrica (BIA)*
+    ◦ *Plicometria*
+    ◦ *Rilevazione delle circonferenze corporee*🎯 **Oltre la Bilancia:** Questi strumenti scientifici ci permettono di monitorare con precisione la massa muscolare, la massa grassa e lo stato di idratazione. In questo modo vedremo i tuoi reali progressi nel tempo, andando ben oltre il semplice numero sulla bilancia.
     """)
 
 def pagina_approccio():
