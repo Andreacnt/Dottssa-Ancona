@@ -245,11 +245,11 @@ def pagina_contatti():
     with col2:
         st.markdown(f"""
         <div class="card" style="text-align:center; margin-bottom:1rem;">
-          <h3>💬 Scrivimi subito</h3>
+          <h3>{C.BOX_PRENOTAZIONI_TITOLO}</h3>
           <p>Scegli il canale che preferisci e ti risponderò al più presto.</p>
           <div style="margin-top:1rem;">
-            <a class="btn-mail" href="{C.PRENOTA_URL}" target="_blank">📅 Prenota un appuntamento</a>
-            <a class="btn-wa" href="{C.WA_URL}" target="_blank">💬 Scrivimi su WhatsApp</a>
+            <a class="btn-prenota" href="{C.PRENOTA_URL}" target="_blank"><img src="{C.MIODOTTORE_LOGO}" width="18" style="vertical-align:-3px; margin-right:6px; border-radius:4px;" onerror="this.style.display='none'">{C.PRENOTA_BTN}</a>
+            <a class="btn-wa" href="{C.WA_URL}" target="_blank"><img src="{C.WHATSAPP_LOGO}" width="18" style="vertical-align:-3px; margin-right:6px;" onerror="this.style.display='none'">{C.WHATSAPP_BTN}</a>
           </div>
         </div>
         """, unsafe_allow_html=True)
