@@ -149,12 +149,19 @@ Ogni percorso nutrizionale è un viaggio che parte da te. Nel nostro primo incon
 Durante la prima consulenza valuteremo:
 
 • **Abitudini e Stile di Vita:** Per capire i tuoi ritmi quotidiani e adattare il piano alla tua routine.
+
 • **Obiettivi e Bisogni:** I traguardi che desideri raggiungere e le tue necessità specifiche.
+
 • **Storia Clinica e Nutrizionale:** Il tuo punto di partenza medico e i percorsi già affrontati.
+
 • **Composizione Corporea Avanzata:** Una fotografia precisa del tuo corpo che eseguiamo attraverso:
+
     ◦ *Analisi Bioimpedenziometrica (BIA)*
+    
     ◦ *Plicometria*
+    
     ◦ *Rilevazione delle circonferenze corporee*
+    
     🎯 **Oltre la Bilancia:** Questi strumenti scientifici ci permettono di monitorare con precisione la massa muscolare, la massa grassa e lo stato di idratazione. In questo modo vedremo i tuoi reali progressi nel tempo, andando ben oltre il semplice numero sulla bilancia.
     """)
 
