@@ -82,11 +82,10 @@ mini_guide = [
 def pagina_home():
     st.image("img/sfondo.jpg", use_container_width=True)
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
-    st.markdown("""
-    Accompagno persone di ogni età in percorsi nutrizionali personalizzati,
-    costruiti sulle esigenze individuali e basati sulle più recenti evidenze scientifiche.
-    Il mio obiettivo è aiutare ogni persona a sviluppare un rapporto più sereno, consapevole
-    e sostenibile con l'alimentazione, migliorando il proprio stato di salute e il benessere generale.
+    st.markdown(""" Ogni corpo ha una storia e ogni età ha le sue esigenze. Per questo non credo nelle soluzioni universali, 
+    ma in percorsi nutrizionali personalizzati e basati su solide basi scientifiche. Il mio obiettivo non è darti una dieta rigida,
+    ma aiutarti a sviluppare un rapporto sereno, consapevole e sostenibile con il cibo. Insieme, 
+    trasformeremo l'alimentazione nel tuo strumento principale per vivere meglio e ritrovare il tuo equilibrio naturale.
     """)
 
     st.markdown("""
