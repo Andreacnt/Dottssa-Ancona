@@ -156,11 +156,11 @@ Durante la prima consulenza valuteremo:
 
 • **Composizione Corporea Avanzata:** Una fotografia precisa del tuo corpo che eseguiamo attraverso:
 
-    ◦ **Analisi Bioimpedenziometrica (BIA)
+    • **Analisi Bioimpedenziometrica (BIA)
     
-    ◦ **Plicometria
+    • **Plicometria
     
-    ◦ **Rilevazione delle circonferenze corporee
+    • **Rilevazione delle circonferenze corporee
     
     🎯 **Oltre la Bilancia:** Questi strumenti scientifici ci permettono di monitorare con precisione la massa muscolare, la massa grassa e lo stato di idratazione. In questo modo vedremo i tuoi reali progressi nel tempo, andando ben oltre il semplice numero sulla bilancia.
     """)
