@@ -104,7 +104,7 @@ section[data-testid="stSidebar"] * { color: white; }
   display: inline-block; font-family: 'Inter', sans-serif; font-weight: 700;
   padding: 13px 34px; border-radius: 50px; text-decoration: none; font-size: 1rem; margin: 0.3rem;
 }
-.btn-prenota { background: #007c68; color: white; }
+.btn-prenota { background: #1cc9ab; color: #0b4b3f; }
 .btn-wa { background: #25D366; color: white; }
 
 img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; object-position: top center !important; border: 4px solid #5B7B55 !important; }
