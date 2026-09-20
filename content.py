@@ -5,6 +5,7 @@ SFONDO_URL = "https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/im
 PROFILO_URL = "https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/profilo.jpg"
 WA_URL = "https://wa.me/393203190704?text=Ciao%20Dott.ssa%20Ancona%2C%20vorrei%20informazioni%20per%20una%20consulenza"
 MAIL_URL = "mailto:anconagraziana@gmail.com?subject=Richiesta%20consulenza&body=Ciao%20Dott.ssa%20Ancona%2C%0A%0AVorrei%20prenotare%20una%20consulenza%20perch%C3%A9...%0A%0ANome%3A%0ATelefono%3A"
+PRENOTA_URL = "https://www.miodottore.it/profilo/graziana-ancona"
 IG_URL = "https://www.instagram.com/nutri_su_insta/"
 IG_HANDLE = "@nutri_su_insta"
 LINKEDIN_URL = "https://linkedin.com/in/anconagraziana"

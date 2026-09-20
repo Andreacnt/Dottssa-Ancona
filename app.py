@@ -248,7 +248,7 @@ def pagina_contatti():
           <h3>💬 Scrivimi subito</h3>
           <p>Scegli il canale che preferisci e ti risponderò al più presto.</p>
           <div style="margin-top:1rem;">
-            <a class="btn-mail" href="{C.MAIL_URL}">✉️ Scrivimi via email</a>
+            <a class="btn-mail" href="{C.PRENOTA_URL}" target="_blank">📅 Prenota un appuntamento</a>
             <a class="btn-wa" href="{C.WA_URL}" target="_blank">💬 Scrivimi su WhatsApp</a>
           </div>
         </div>
