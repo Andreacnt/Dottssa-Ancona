@@ -132,7 +132,7 @@ def pagina_servizi():
     col1, col2 = st.columns(2)
     with col1:
         st.markdown('<div class="servizio-card">⚖️ **Dimagrimento e ricomposizione corporea**</div>', unsafe_allow_html=True)
-        st.markdown('<div class="servizio-card">🌸 **Nutrizione femminile**<br>• PCOS • Endometriosi • Gravidanza • Allattamento • Menopausa</div>', unsafe_allow_html=True)
+        st.markdown('<div class="servizio-card">🌸 **Nutrizione femminile**<br>• PMOS • Endometriosi • Gravidanza • Allattamento • Menopausa</div>', unsafe_allow_html=True)
         st.markdown('<div class="servizio-card">🩺 **Patologie metaboliche diagnosticate**</div>', unsafe_allow_html=True)
         st.markdown('<div class="servizio-card">🌱 **Alimentazione vegetariana e vegana**</div>', unsafe_allow_html=True)
     with col2:
