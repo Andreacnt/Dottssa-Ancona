@@ -151,7 +151,8 @@ Ogni percorso nutrizionale è un viaggio che parte da te. Nel nostro primo incon
 • **Composizione Corporea Avanzata:** Una fotografia precisa del tuo corpo che eseguiamo attraverso:
     ◦ *Analisi Bioimpedenziometrica (BIA)*
     ◦ *Plicometria*
-    ◦ *Rilevazione delle circonferenze corporee*🎯 **Oltre la Bilancia:** Questi strumenti scientifici ci permettono di monitorare con precisione la massa muscolare, la massa grassa e lo stato di idratazione. In questo modo vedremo i tuoi reali progressi nel tempo, andando ben oltre il semplice numero sulla bilancia.
+    ◦ *Rilevazione delle circonferenze corporee*
+    🎯 **Oltre la Bilancia:** Questi strumenti scientifici ci permettono di monitorare con precisione la massa muscolare, la massa grassa e lo stato di idratazione. In questo modo vedremo i tuoi reali progressi nel tempo, andando ben oltre il semplice numero sulla bilancia.
     """)
 
 def pagina_approccio():
