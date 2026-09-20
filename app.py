@@ -379,7 +379,6 @@ def pagina_percorso():
     )
     st.markdown('</div>', unsafe_allow_html=True)
 
-
 def pagina_approccio():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="kicker">Approccio</div>', unsafe_allow_html=True)
