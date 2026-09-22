@@ -18,10 +18,9 @@ def pagina_home():
     st.markdown(f"""
     <div class="home-banner">
       <img src="{C.SFONDO_URL}" alt="Dott.ssa Graziana Ancona — Biologa Nutrizionista">
+      <a href="contatti" class="home-banner-cta">📅 Prenota un appuntamento</a>
     </div>
     """, unsafe_allow_html=True)
-    if st.button("📅 Prenota un appuntamento", key="home_prenota"):
-        st.switch_page(page_contatti)
 
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
     st.markdown(C.HOME_INTRO)
@@ -192,7 +191,7 @@ page_servizi = st.Page(pagina_servizi, title="Di cosa mi occupo", icon=":materia
 page_percorso = st.Page(pagina_percorso, title="Percorso", icon=":material/route:")
 page_approccio = st.Page(pagina_approccio, title="Approccio", icon=":material/eco:")
 page_blog = st.Page(pagina_blog, title="Blog", icon=":material/menu_book:")
-page_contatti = st.Page(pagina_contatti, title="Contatti", icon=":material/mail:")
+page_contatti = st.Page(pagina_contatti, title="Contatti", icon=":material/mail:", url_path="contatti")
 
 pg = st.navigation(
     [page_home, page_chisono, page_servizi, page_percorso, page_approccio, page_blog, page_contatti],

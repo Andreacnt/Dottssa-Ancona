@@ -199,18 +199,16 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 
 .sep { text-align: center; color: var(--sage); opacity: 0.65; font-size: 1.15rem; margin: 1.2rem 0; }
 
-.home-banner { border-radius: 18px; overflow: hidden; box-shadow: var(--shadow-md); margin-bottom: -30px; }
+.home-banner { position: relative; border-radius: 18px; overflow: hidden; box-shadow: var(--shadow-md); }
 .home-banner img { display: block; width: 100%; height: 360px; object-fit: cover; object-position: center 30%; }
-.stButton { text-align: center; }
-.stButton > button {
+.home-banner-cta {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
   background: var(--accent); color: #4A3A1A;
-  font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1rem;
-  padding: 13px 38px; border-radius: var(--radius-pill); border: none;
-  position: relative; z-index: 2;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.05rem;
+  padding: 14px 42px; border-radius: var(--radius-pill); text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25); white-space: nowrap;
 }
-.stButton > button:hover { background: var(--accent-dark); color: white; border: none; }
-.stButton > button:focus { outline: none; box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+.home-banner-cta:hover { background: var(--accent-dark); color: white; }
 
 .footer {
   background: var(--forest); text-align: center; padding: var(--sp-5) var(--sp-3);
@@ -224,8 +222,7 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 
 @media (max-width: 768px) {
   .main > .block-container { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
-  .home-banner img { height: 220px; }
-  .home-banner { margin-bottom: -24px; }
+  .home-banner img { height: 240px; }
   .hero { min-height: 68vh; }
   .hero-inner h1 { font-size: 2rem; }
   .hero-inner .sub { font-size: 1.15rem; }
