@@ -107,7 +107,7 @@ a[data-testid="stTopNavLink"][aria-current="page"] span:not([data-testid="stIcon
   }
 }
 
-a[data-testid="stLogoLink"] img { max-height: 88px !important; width: auto; object-fit: contain; }
+a[data-testid="stLogoLink"] img { height: 88px !important; width: auto; object-fit: contain; }
 
 .hero {
   position: relative; width: 100vw; margin-left: calc(-50vw + 50%);
@@ -225,7 +225,7 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 @media (max-width: 768px) {
   .main > .block-container { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
   header[data-testid="stHeader"] { min-height: 64px; }
-  a[data-testid="stLogoLink"] img { max-height: 52px !important; }
+  a[data-testid="stLogoLink"] img { height: 52px !important; }
 
   .hero { min-height: 68vh; }
   .hero-inner h1 { font-size: 2rem; }
