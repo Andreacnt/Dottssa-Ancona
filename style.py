@@ -93,13 +93,13 @@ header[data-testid="stHeader"] {
   min-height: 74px;
 }
 a[data-testid="stTopNavLink"] { text-decoration: none; padding: 8px 14px; }
-a[data-testid="stTopNavLink"] span {
-  font-family: 'Inter', sans-serif !important; font-weight: 600 !important; font-size: 0.85rem !important;
-  text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink) !important;
+a[data-testid="stTopNavLink"] span:not([data-testid="stIconMaterial"]) {
+  font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.85rem;
+  text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink);
 }
-a[data-testid="stTopNavLink"]:hover span { color: var(--sage) !important; }
+a[data-testid="stTopNavLink"]:hover span:not([data-testid="stIconMaterial"]) { color: var(--sage); }
 a[data-testid="stTopNavLink"][aria-current="page"] { border-bottom: 2px solid var(--accent); }
-a[data-testid="stTopNavLink"][aria-current="page"] span { color: var(--forest) !important; }
+a[data-testid="stTopNavLink"][aria-current="page"] span:not([data-testid="stIconMaterial"]) { color: var(--forest); }
 @media (min-width: 769px) {
   div:has(> div > div[data-testid="stTopNavLinkContainer"]) {
     margin-left: auto;
