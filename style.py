@@ -39,14 +39,7 @@ CUSTOM_CSS = """
   background-color: #E7EEE1;
   background-image: radial-gradient(rgba(91,123,85,0.10) 1.2px, transparent 1.2px);
   background-size: 22px 22px;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26'%3E%3Ccircle cx='13' cy='13' r='11' fill='none' stroke='%235B7B55' stroke-width='1.5' opacity='0.55'/%3E%3Ccircle cx='13' cy='13' r='4.5' fill='%235B7B55'/%3E%3C/svg%3E") 13 13, auto;
 }
-a, button, summary,
-a[data-testid="stTopNavLink"],
-.card, .post, .svc {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Ccircle cx='15' cy='15' r='13' fill='none' stroke='%230B7A6C' stroke-width='2'/%3E%3Ccircle cx='15' cy='15' r='5.5' fill='%230B7A6C'/%3E%3C/svg%3E") 15 15, pointer;
-}
-input, textarea, [contenteditable] { cursor: auto; }
 .btn-prenota:active, .btn-wa:active, .ig-btn:active,
 a[data-testid="stTopNavLink"]:active { transform: scale(0.94); }
 
