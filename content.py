@@ -37,8 +37,8 @@ CHISONO_BIO = """Sono la **Dott.ssa Graziana Ancona**, **Biologa Nutrizionista**
 ✨ Metto le mie competenze al tuo servizio per dimostrarti che mangiare bene è un atto di cura, non di sacrificio. Il mio obiettivo è darti gli strumenti scientifici e pratici per valorizzare il tuo corpo, trovare la tua energia migliore e investire sulla tua salute."""
 
 FORMAZIONE = [
-    "Scienze gastronomiche",
-    "Scienze della Nutrizione Umana",
+    "Laurea in Scienze gastronomiche",
+    "Laurea in Scienze della Nutrizione Umana",
     "Scuola di nutrizione e integrazione nello sport (sanis)",
     "Esperta in Benessere e salute della donna",
 ]
