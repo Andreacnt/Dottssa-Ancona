@@ -15,6 +15,28 @@ LINKEDIN_URL = "https://linkedin.com/in/anconagraziana"
 MAPS_URL = "https://maps.google.com/maps?q=Viale+La+Grola+5/B+Parma+43125"
 MAPS_EMBED = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.54132679946!2d10.311615611314664!3d44.810535470950065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47806b8f8ab09825%3A0xa381d4de6169890f!2sRigenesis!5e0!3m2!1sit!2sit!4v1783455655720!5m2!1sit!2sit" width="100%" height="300" style="border:0;border-radius:16px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>'
 
+# --- Banner pagine (url, credito) — foto Wikimedia Commons ---
+IMG_SERVIZI = (
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Healthy_Vegan_Buddha_Bowl_-_49859044753.jpg/1280px-Healthy_Vegan_Buddha_Bowl_-_49859044753.jpg",
+    "Foto: FitTasteTic · CC BY-SA 2.0 via Wikimedia Commons",
+)
+IMG_PERCORSO = (
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Schroecken-hiking_path_Hoefergrat-Asurnipal-01ESD.jpg/1280px-Schroecken-hiking_path_Hoefergrat-Asurnipal-01ESD.jpg",
+    "Foto: Rikki Mitterer · CC BY-SA 4.0 via Wikimedia Commons",
+)
+IMG_APPROCCIO = (
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Calm_Yoga.png/1280px-Calm_Yoga.png",
+    "Foto: Deedee Run · CC BY 4.0 via Wikimedia Commons",
+)
+IMG_BLOG = (
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Cooking_fresh_pepper_sauce_using_ripe_red_peppers_in_a_rustic_kitchen.jpg/1280px-Cooking_fresh_pepper_sauce_using_ripe_red_peppers_in_a_rustic_kitchen.jpg",
+    "Foto: Shixart1985 · CC BY 2.0 via Wikimedia Commons",
+)
+IMG_CONTATTI = (
+    "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Parma%2C_battistero_e_Palazzo_Vescovile.jpg/1280px-Parma%2C_battistero_e_Palazzo_Vescovile.jpg",
+    "Foto: Palickap · CC BY-SA 4.0 via Wikimedia Commons",
+)
+
 EMAIL = "anconagraziana@gmail.com"
 CELL = "320 3190704"
 SEDE_NOME = "Centro Rigenesis"
