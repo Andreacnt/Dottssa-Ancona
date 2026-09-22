@@ -20,9 +20,6 @@ def pagina_home():
       <img class="hero-bg" src="{C.SFONDO_URL}" alt="Dott.ssa Graziana Ancona — Biologa Nutrizionista">
       <div class="hero-veil"></div>
       <div class="hero-inner">
-        <div class="over">{C.HERO_OVER}</div>
-        <h1>{C.HERO_NOME}</h1>
-        <div class="sub">{C.HERO_SUB}</div>
         <a href="contatti" class="btn-prenota hero-cta">📅 Prenota un appuntamento</a>
       </div>
     </div>
