@@ -102,6 +102,11 @@ header[data-testid="stHeader"] nav a[aria-current="page"] {
   background: transparent; color: var(--forest);
   border-bottom: 2px solid var(--accent);
 }
+@media (min-width: 769px) {
+  header[data-testid="stHeader"] nav {
+    position: absolute; left: 50%; transform: translateX(-50%);
+  }
+}
 
 [data-testid="stLogo"] img { max-height: 62px !important; width: auto; object-fit: contain; }
 
