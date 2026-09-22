@@ -183,7 +183,7 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
   background: var(--accent); color: #4A3A1A !important;
   font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1rem;
   padding: 13px 38px; border-radius: var(--radius-pill); text-decoration: none;
-  border: none; width: 100%; text-align: center;
+  border: none; width: auto; text-align: center;
 }
 [data-testid="stPageLink-NavLink"] a:hover { background: var(--accent-dark); color: white !important; }
 [data-testid="stPageLink-NavLink"] a p { color: inherit; margin: 0; }

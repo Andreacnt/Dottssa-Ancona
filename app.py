@@ -26,9 +26,7 @@ def pagina_home():
     """)
 
     st.markdown("")
-    _, col_btn, _ = st.columns([1, 2, 1])
-    with col_btn:
-        st.page_link(page_contatti, label="Prenota un appuntamento", icon="📅")
+    st.page_link(page_contatti, label="Prenota un appuntamento", icon="📅")
 
 
 def pagina_chisono():
