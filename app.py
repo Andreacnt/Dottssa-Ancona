@@ -15,7 +15,14 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 
 def pagina_home():
-    st.image("img/sfondo.jpg", use_container_width=True)
+    st.markdown(f"""
+    <div class="home-banner">
+      <img src="{C.SFONDO_URL}" alt="Dott.ssa Graziana Ancona — Biologa Nutrizionista">
+    </div>
+    """, unsafe_allow_html=True)
+    if st.button("📅 Prenota un appuntamento", key="home_prenota"):
+        st.switch_page(page_contatti)
+
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
     st.markdown(C.HOME_INTRO)
 
@@ -24,9 +31,6 @@ def pagina_home():
 
     💻 **Consulenze online:** {C.SEDE_ONLINE}
     """)
-
-    st.markdown("")
-    st.page_link(page_contatti, label="Prenota un appuntamento", icon="📅")
 
 
 def pagina_chisono():
