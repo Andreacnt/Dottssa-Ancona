@@ -26,9 +26,7 @@ SEDE_ONLINE = "su appuntamento"
 P_IVA = "03425440736"
 
 # --- Home ---
-HERO_OVER = "Biologa Nutrizionista"
 HERO_NOME = "Dott.ssa Graziana Ancona"
-HERO_SUB = "Nutrizione personalizzata per il tuo benessere"
 
 HOME_TITOLO = "### Accompagnarti verso il tuo benessere"
 HOME_INTRO = "Ogni corpo ha una storia e ogni età ha le sue esigenze. Per questo non credo nelle soluzioni universali, ma in percorsi nutrizionali personalizzati e basati su solide basi scientifiche. Il mio obiettivo non è darti una dieta rigida, ma aiutarti a sviluppare un rapporto sereno, consapevole e sostenibile con il cibo. Insieme, trasformeremo l'alimentazione nel tuo strumento principale per vivere meglio e ritrovare il tuo equilibrio naturale."
@@ -63,13 +61,6 @@ servizi_card = [
     ("🥗", "Disturbi gastrointestinali", "Colon irritabile (IBS) · MICI · Disturbi digestivi e intestinali"),
     ("💪", "Nutrizione sportiva", ""),
     ("📚", "Educazione alimentare e prevenzione", ""),
-]
-
-passi = [
-    ("Colloquio iniziale", "Abitudini, obiettivi e storia clinica"),
-    ("Valutazione", "BIA, plicometria e circonferenze"),
-    ("Piano personalizzato", "Realistico e sostenibile nel tempo"),
-    ("Monitoraggio", "Follow-up e aggiustamenti del percorso"),
 ]
 
 # --- Percorso ---
@@ -156,24 +147,3 @@ mini_guide = [
      "https://www.instagram.com/p/DNkhhUPsWlb/"),
 ]
 
-# --- Banner CTA (titolo, testo) per ogni pagina ---
-CTA_HOME = (
-    "Inizia il tuo percorso",
-    "Prenota una consulenza personalizzata e scopri come raggiungere i tuoi obiettivi di benessere con un metodo scientifico e sostenibile.",
-)
-CTA_CHISONO = (
-    "Vuoi conoscermi meglio?",
-    "Prenota una prima consulenza: ti ascolterò e costruiremo insieme il percorso più adatto a te.",
-)
-CTA_SERVIZI = (
-    "Pronto per iniziare?",
-    "Contattami per una prima consulenza: valuteremo insieme il percorso più adatto alle tue esigenze.",
-)
-CTA_PERCORSO = (
-    "Inizia il tuo percorso nutrizionale",
-    "Ogni giorno è quello giusto per prenderti cura di te.",
-)
-CTA_APPROCCIO = (
-    "Trova il tuo equilibrio",
-    "Contattami per una consulenza: troveremo insieme la strada giusta per te.",
-)

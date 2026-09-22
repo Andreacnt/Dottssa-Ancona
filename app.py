@@ -14,67 +14,19 @@ st.set_page_config(
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 
-def cta_box(titolo, testo):
-    st.markdown(f"""
-    <div class="cta">
-      <h2>{titolo}</h2>
-      <p>{testo}</p>
-      <a href="{C.WA_URL}" target="_blank" class="btn-light">Prenota una visita</a>
-    </div>
-    """, unsafe_allow_html=True)
-
-
 def pagina_home():
-    st.markdown(f"""
-    <div class="hero">
-      <img class="hero-bg" src="{C.SFONDO_URL}" alt="">
-      <div class="hero-veil"></div>
-      <div class="hero-inner">
-        <div class="over">{C.HERO_OVER}</div>
-        <h1>{C.HERO_NOME}</h1>
-        <div class="sub">{C.HERO_SUB}</div>
-        <a href="{C.WA_URL}" target="_blank" class="btn-light">Prenota una visita</a>
-        <div class="hero-social">
-          <a href="{C.IG_URL}" target="_blank">Instagram</a>
-          <a href="{C.LINKEDIN_URL}" target="_blank">LinkedIn</a>
-          <a href="{C.MAIL_URL}">Email</a>
-        </div>
-      </div>
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-    st.markdown('<div class="kicker">Chi sono</div>', unsafe_allow_html=True)
-
-    col_foto, col_testo = st.columns([1, 2.2])
-    with col_foto:
-        st.image(C.PROFILO_URL, width=250)
-    with col_testo:
-        st.markdown(f"{C.HOME_TITOLO}\n{C.HOME_INTRO}")
-
-    st.markdown('<div class="sep">✦ ✦ ✦</div>', unsafe_allow_html=True)
-    st.markdown('<div class="kicker">Di cosa mi occupo</div>', unsafe_allow_html=True)
-    st.markdown("### Aree di intervento")
-
-    cols = st.columns(4)
-    for i, (icona, titolo, _) in enumerate(C.servizi_card):
-        with cols[i % 4]:
-            st.markdown(f"""
-            <div class="card" style="text-align:center;">
-              <div class="card-icon">{icona}</div>
-              <h3>{titolo}</h3>
-            </div>
-            """, unsafe_allow_html=True)
+    st.image("img/sfondo.jpg", use_container_width=True)
+    st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
+    st.markdown(C.HOME_INTRO)
 
     st.markdown(f"""
-    <div style="text-align:center; margin:1.6rem 0; font-family:'Inter',sans-serif; color:#636E72;">
-      📍 <strong style="color:#2D3436;">Consulenze in presenza:</strong> {C.SEDE_GIORNI} presso {C.SEDE_NOME}, {C.SEDE_INDIRIZZO}<br>
-      💻 <strong style="color:#2D3436;">Consulenze online:</strong> {C.SEDE_ONLINE}
-    </div>
-    """, unsafe_allow_html=True)
+    📍 **Consulenze in presenza:** {C.SEDE_GIORNI} presso {C.SEDE_NOME}, {C.SEDE_INDIRIZZO}
 
-    cta_box(*C.CTA_HOME)
-    st.markdown('</div>', unsafe_allow_html=True)
+    💻 **Consulenze online:** {C.SEDE_ONLINE}
+    """)
+
+    st.markdown("")
+    st.page_link(page_contatti, label="Prenota un appuntamento", icon="📅")
 
 
 def pagina_chisono():
@@ -97,8 +49,6 @@ def pagina_chisono():
     with col_b:
         with st.expander("📜 Dati professionali"):
             st.markdown("\n".join(f"- {voce}" for voce in C.DATI_PROFESSIONALI))
-
-    cta_box(*C.CTA_CHISONO)
     st.markdown('</div>', unsafe_allow_html=True)
 
 
@@ -114,21 +64,6 @@ def pagina_servizi():
             extra = f"<br><small>{dettaglio}</small>" if dettaglio else ""
             st.markdown(f'<div class="svc">{icona} <strong>{titolo}</strong>{extra}</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="sep">✦ ✦ ✦</div>', unsafe_allow_html=True)
-    st.markdown("### Il percorso in 4 passi")
-
-    cols = st.columns(4)
-    for i, (titolo, desc) in enumerate(C.passi):
-        with cols[i]:
-            st.markdown(f"""
-            <div class="card" style="text-align:center;">
-              <div class="step-n" style="margin:0 auto 0.8rem;">{i + 1}</div>
-              <h3>{titolo}</h3>
-              <p>{desc}</p>
-            </div>
-            """, unsafe_allow_html=True)
-
-    cta_box(*C.CTA_SERVIZI)
     st.markdown('</div>', unsafe_allow_html=True)
 
 
@@ -138,8 +73,6 @@ def pagina_percorso():
     st.title("Il percorso nutrizionale")
     st.markdown(C.PERCORSO_TITOLO)
     st.markdown(C.PERCORSO_HTML, unsafe_allow_html=True)
-
-    cta_box(*C.CTA_PERCORSO)
     st.markdown('</div>', unsafe_allow_html=True)
 
 
@@ -176,7 +109,6 @@ def pagina_approccio():
             </div>
             """, unsafe_allow_html=True)
 
-    cta_box(*C.CTA_APPROCCIO)
     st.markdown('</div>', unsafe_allow_html=True)
 
 
@@ -258,15 +190,18 @@ def pagina_contatti():
     st.markdown('</div>', unsafe_allow_html=True)
 
 
-pg = st.navigation([
-    st.Page(pagina_home, title="Home", icon="🏠", default=True),
-    st.Page(pagina_chisono, title="Chi Sono", icon="👩‍⚕️"),
-    st.Page(pagina_servizi, title="Di cosa mi occupo", icon="📋"),
-    st.Page(pagina_percorso, title="Percorso", icon="📊"),
-    st.Page(pagina_approccio, title="Approccio", icon="🌿"),
-    st.Page(pagina_blog, title="Blog", icon="📖"),
-    st.Page(pagina_contatti, title="Contatti", icon="📬"),
-])
+page_home = st.Page(pagina_home, title="Home", icon=":material/home:", default=True)
+page_chisono = st.Page(pagina_chisono, title="Chi Sono", icon=":material/person:")
+page_servizi = st.Page(pagina_servizi, title="Di cosa mi occupo", icon=":material/spa:")
+page_percorso = st.Page(pagina_percorso, title="Percorso", icon=":material/route:")
+page_approccio = st.Page(pagina_approccio, title="Approccio", icon=":material/eco:")
+page_blog = st.Page(pagina_blog, title="Blog", icon=":material/menu_book:")
+page_contatti = st.Page(pagina_contatti, title="Contatti", icon=":material/mail:")
+
+pg = st.navigation(
+    [page_home, page_chisono, page_servizi, page_percorso, page_approccio, page_blog, page_contatti],
+    position="top",
+)
 pg.run()
 
 st.markdown(f"""
@@ -276,11 +211,11 @@ st.markdown(f"""
   <p>Biologa Nutrizionista — Parma</p>
   <p>{C.SEDE_NOME} · {C.SEDE_INDIRIZZO}</p>
   <p>📞 {C.CELL} · ✉️ <a href="mailto:{C.EMAIL}">{C.EMAIL}</a></p>
-  <p>{C.SEDE_GIORNI.capitalize()} · Online {C.SEDE_ONLINE}</p>
   <p class="footer-social">
     <a href="{C.IG_URL}" target="_blank">Instagram</a> ·
     <a href="{C.LINKEDIN_URL}" target="_blank">LinkedIn</a> ·
-    <a href="{C.WA_URL}" target="_blank">WhatsApp</a>
+    <a href="{C.WA_URL}" target="_blank">WhatsApp</a> ·
+    <a href="{C.PRENOTA_URL}" target="_blank">MioDottore</a>
   </p>
   <p style="margin-top:0.8rem; font-size:0.8rem; opacity:0.6;">© {datetime.now().year} — P.IVA {C.P_IVA}</p>
 </div>
