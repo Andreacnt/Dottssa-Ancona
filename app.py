@@ -16,13 +16,18 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 def pagina_home():
     st.markdown(f"""
-    <div class="home-banner">
-      <img src="{C.SFONDO_URL}" alt="Dott.ssa Graziana Ancona — Biologa Nutrizionista">
-      <a href="contatti" class="home-banner-cta">📅 Prenota un appuntamento</a>
+    <div class="hero">
+      <img class="hero-bg" src="{C.SFONDO_URL}" alt="Dott.ssa Graziana Ancona — Biologa Nutrizionista">
+      <div class="hero-veil"></div>
+      <div class="hero-inner">
+        <div class="over">{C.HERO_OVER}</div>
+        <h1>{C.HERO_NOME}</h1>
+        <div class="sub">{C.HERO_SUB}</div>
+        <a href="contatti" class="btn-prenota hero-cta">📅 Prenota un appuntamento</a>
+      </div>
     </div>
     """, unsafe_allow_html=True)
 
-    st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
     st.markdown(C.HOME_INTRO)
 
     st.markdown(f"""

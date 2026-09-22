@@ -26,7 +26,9 @@ SEDE_ONLINE = "su appuntamento"
 P_IVA = "03425440736"
 
 # --- Home ---
+HERO_OVER = "Biologa Nutrizionista"
 HERO_NOME = "Dott.ssa Graziana Ancona"
+HERO_SUB = "Nutrizione personalizzata per il tuo benessere"
 
 HOME_TITOLO = "### Accompagnarti verso il tuo benessere"
 HOME_INTRO = "Ogni corpo ha una storia e ogni età ha le sue esigenze. Per questo non credo nelle soluzioni universali, ma in percorsi nutrizionali personalizzati e basati su solide basi scientifiche. Il mio obiettivo non è darti una dieta rigida, ma aiutarti a sviluppare un rapporto sereno, consapevole e sostenibile con il cibo. Insieme, trasformeremo l'alimentazione nel tuo strumento principale per vivere meglio e ritrovare il tuo equilibrio naturale."
