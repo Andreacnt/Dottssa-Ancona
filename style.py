@@ -87,17 +87,21 @@ section[data-testid="stSidebar"] * { color: white; }
 [data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
 
 header[data-testid="stHeader"] {
-  background: rgba(233,240,227,0.94); backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(91,123,85,0.28);
+  background: rgba(255,255,255,0.96); backdrop-filter: blur(10px);
+  border-bottom: 3px solid var(--sage);
   box-shadow: 0 2px 12px rgba(61,90,61,0.08);
   min-height: 74px;
 }
 header[data-testid="stHeader"] nav a {
-  font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.95rem;
-  color: var(--forest); border-radius: var(--radius-pill); padding: 8px 16px;
+  font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.85rem;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--ink); border-radius: 0; padding: 8px 14px;
 }
-header[data-testid="stHeader"] nav a:hover { background: var(--sage-pale); }
-header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--forest); color: white; }
+header[data-testid="stHeader"] nav a:hover { color: var(--sage); background: transparent; }
+header[data-testid="stHeader"] nav a[aria-current="page"] {
+  background: transparent; color: var(--forest);
+  border-bottom: 2px solid var(--accent);
+}
 
 [data-testid="stLogo"] img { max-height: 62px !important; width: auto; object-fit: contain; }
 
