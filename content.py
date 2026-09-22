@@ -32,7 +32,9 @@ HOME_TITOLO = "### Accompagnarti verso il tuo benessere"
 HOME_INTRO = "Ogni corpo ha una storia e ogni età ha le sue esigenze. Per questo non credo nelle soluzioni universali, ma in percorsi nutrizionali personalizzati e basati su solide basi scientifiche. Il mio obiettivo non è darti una dieta rigida, ma aiutarti a sviluppare un rapporto sereno, consapevole e sostenibile con il cibo. Insieme, trasformeremo l'alimentazione nel tuo strumento principale per vivere meglio e ritrovare il tuo equilibrio naturale."
 
 # --- Chi sono ---
-CHISONO_BIO = "Sono la **Dott.ssa Graziana Ancona**, **Biologa Nutrizionista**. Dopo la laurea in Scienze della Nutrizione Umana, ho focalizzato le mie competenze e la mia formazione nell'ambito della **salute della donna** in ogni fase della vita e della **nutrizione per lo sport**. ✨ Metto le mie competenze al tuo servizio per dimostrarti che mangiare bene è un atto di cura, non di sacrificio. Il mio obiettivo è darti gli strumenti scientifici e pratici per valorizzare il tuo corpo, trovare la tua energia migliore e investire sulla tua salute."
+CHISONO_BIO = """Sono la **Dott.ssa Graziana Ancona**, **Biologa Nutrizionista**. Dopo la laurea in Scienze della Nutrizione Umana, ho focalizzato le mie competenze e la mia formazione nell'ambito della **salute della donna** in ogni fase della vita e della **nutrizione per lo sport**.
+
+✨ Metto le mie competenze al tuo servizio per dimostrarti che mangiare bene è un atto di cura, non di sacrificio. Il mio obiettivo è darti gli strumenti scientifici e pratici per valorizzare il tuo corpo, trovare la tua energia migliore e investire sulla tua salute."""
 
 FORMAZIONE = [
     "Scienze gastronomiche",
