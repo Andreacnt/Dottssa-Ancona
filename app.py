@@ -55,7 +55,6 @@ def pagina_servizi():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="kicker">Servizi</div>', unsafe_allow_html=True)
     st.title("Di cosa mi occupo")
-    st.image(C.IMG_SERVIZI[0], caption=C.IMG_SERVIZI[1], use_container_width=True)
     st.markdown(C.SERVIZI_INTRO)
 
     cols = st.columns(2)
@@ -71,7 +70,6 @@ def pagina_percorso():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="kicker">Percorso</div>', unsafe_allow_html=True)
     st.title("Il percorso nutrizionale")
-    st.image(C.IMG_PERCORSO[0], caption=C.IMG_PERCORSO[1], use_container_width=True)
     st.markdown(C.PERCORSO_TITOLO)
     st.markdown(C.PERCORSO_HTML, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
@@ -118,7 +116,6 @@ def pagina_blog():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="kicker">Blog</div>', unsafe_allow_html=True)
     st.title("Mini Guide dal Blog")
-    st.image(C.IMG_BLOG[0], caption=C.IMG_BLOG[1], use_container_width=True)
     st.markdown(C.BLOG_SOTTOTITOLO)
 
     if not C.mini_guide:
