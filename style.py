@@ -178,13 +178,15 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 
 .sep { text-align: center; color: var(--sage-light); opacity: 0.45; font-size: 1.15rem; margin: 1.2rem 0; }
 
-[data-testid="stPageLink-NavLink"] {
-  display: inline-block; background: var(--accent); color: #4A3A1A;
+[data-testid="stPageLink-NavLink"] a {
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  background: var(--accent); color: #4A3A1A !important;
   font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1rem;
   padding: 13px 38px; border-radius: var(--radius-pill); text-decoration: none;
-  border: none; width: auto;
+  border: none; width: 100%; text-align: center;
 }
-[data-testid="stPageLink-NavLink"]:hover { background: var(--accent-dark); color: white; }
+[data-testid="stPageLink-NavLink"] a:hover { background: var(--accent-dark); color: white !important; }
+[data-testid="stPageLink-NavLink"] a p { color: inherit; margin: 0; }
 
 .footer {
   background: var(--forest); text-align: center; padding: var(--sp-5) var(--sp-3);
