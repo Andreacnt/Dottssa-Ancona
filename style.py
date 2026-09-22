@@ -35,9 +35,19 @@ CUSTOM_CSS = """
   --sp-5: 3rem;
 }
 
-.stApp { background: var(--cream); }
+.stApp {
+  background-color: #E7EEE1;
+  background-image: radial-gradient(rgba(91,123,85,0.10) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
 
-.main > .block-container { max-width: 1080px; padding-top: 0 !important; }
+.main > .block-container {
+  max-width: 1080px; padding-top: 0 !important;
+  background: rgba(255,255,255,0.62);
+  border-radius: 0 0 28px 28px;
+  padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem;
+  box-shadow: 0 10px 40px rgba(61,90,61,0.10);
+}
 
 h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--forest); }
 h1 { font-size: 2.2rem; }
@@ -49,8 +59,11 @@ p, li, .stMarkdown { font-family: 'Inter', sans-serif; color: var(--ink); line-h
 .page-wrap { padding: var(--sp-4) var(--sp-2); }
 
 .kicker {
+  display: inline-block;
   font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 700;
-  color: var(--sage); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.4rem;
+  color: var(--forest); text-transform: uppercase; letter-spacing: 2px;
+  background: var(--sage-pale); border-radius: var(--radius-pill);
+  padding: 6px 16px; margin-bottom: 0.8rem;
 }
 
 /* Animazioni: classi esplicite invece di nth-child, così l'ordine non si rompe
@@ -104,8 +117,8 @@ header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--fo
 .hero-social a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 1.05rem; margin: 0 0.7rem; font-family: 'Inter', sans-serif; }
 
 .card {
-  background: white; border-radius: var(--radius-card); padding: 1.6rem;
-  box-shadow: var(--shadow-sm); border: 1px solid rgba(91,123,85,0.08); height: 100%;
+  background: #F6FAF2; border-radius: var(--radius-card); padding: 1.6rem;
+  box-shadow: var(--shadow-sm); border: 1px solid rgba(91,123,85,0.16); height: 100%;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .card:hover, .post:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
@@ -118,7 +131,7 @@ header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--fo
 .card p { font-size: 0.95rem; color: var(--muted); }
 
 .svc {
-  background: white; border-radius: var(--radius-card); padding: 1.2rem 1.4rem; margin: 0.5rem 0;
+  background: linear-gradient(135deg, #F6FAF2, #EFF4E6); border-radius: var(--radius-card); padding: 1.2rem 1.4rem; margin: 0.5rem 0;
   border-left: 4px solid var(--sage); box-shadow: var(--shadow-sm);
   font-family: 'Inter', sans-serif; color: var(--ink);
 }
@@ -139,8 +152,8 @@ header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--fo
 }
 
 .post {
-  background: white; border-radius: var(--radius-card); box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(91,123,85,0.08); height: 100%;
+  background: #F6FAF2; border-radius: var(--radius-card); box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(91,123,85,0.16); height: 100%;
   display: flex; flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -150,8 +163,8 @@ header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--fo
 .post-link { color: var(--sage); font-weight: 700; text-decoration: none; font-size: 0.92rem; font-family: 'Inter', sans-serif; margin-top: 0.8rem; }
 
 .ig-box {
-  background: white; border-radius: var(--radius-card); padding: 2.2rem 1.5rem;
-  box-shadow: var(--shadow-sm); border: 1px solid rgba(91,123,85,0.08);
+  background: linear-gradient(135deg, #F6FAF2, #EAF1E2); border-radius: var(--radius-card); padding: 2.2rem 1.5rem;
+  box-shadow: var(--shadow-sm); border: 1px solid rgba(91,123,85,0.16);
   margin: var(--sp-4) 0; text-align: center;
 }
 .ig-btn {
@@ -174,9 +187,11 @@ header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--fo
 
 img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; object-position: top center !important; border: 4px solid var(--sage) !important; }
 
-.streamlit-expanderHeader { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--forest); background: white; border-radius: 12px; }
+.streamlit-expanderHeader { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--forest); background: #EFF4E6; border-radius: 12px; }
 
-.sep { text-align: center; color: var(--sage-light); opacity: 0.45; font-size: 1.15rem; margin: 1.2rem 0; }
+[data-testid="stImage"] img { border-radius: 18px; box-shadow: var(--shadow-md); }
+
+.sep { text-align: center; color: var(--sage); opacity: 0.65; font-size: 1.15rem; margin: 1.2rem 0; }
 
 [data-testid="stPageLink-NavLink"] a {
   display: flex; align-items: center; justify-content: center; gap: 0.5rem;
@@ -199,6 +214,7 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 .footer-social a { font-size: 1.05rem; margin: 0 0.6rem; }
 
 @media (max-width: 768px) {
+  .main > .block-container { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
   .hero { min-height: 68vh; }
   .hero-inner h1 { font-size: 2rem; }
   .hero-inner .sub { font-size: 1.15rem; }
