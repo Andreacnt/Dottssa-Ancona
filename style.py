@@ -39,6 +39,7 @@ CUSTOM_CSS = """
   background-color: #E7EEE1;
   background-image: radial-gradient(rgba(91,123,85,0.10) 1.2px, transparent 1.2px);
   background-size: 22px 22px;
+  overflow-x: clip;
 }
 .btn-prenota:active, .btn-wa:active, .ig-btn:active,
 a[data-testid="stTopNavLink"]:active { transform: scale(0.94); }
@@ -226,6 +227,7 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 
 @media (max-width: 768px) {
   .main > .block-container { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
+  [data-testid="column"] { min-width: 100% !important; flex: 1 1 100% !important; }
 
   .hero { min-height: 68vh; }
   .hero-inner h1 { font-size: 2rem; }
