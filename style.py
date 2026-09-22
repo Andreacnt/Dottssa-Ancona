@@ -98,6 +98,8 @@ header[data-testid="stHeader"] nav a {
 header[data-testid="stHeader"] nav a:hover { background: var(--sage-pale); }
 header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--forest); color: white; }
 
+[data-testid="stLogo"] img { max-height: 46px; width: auto; object-fit: contain; }
+
 .hero {
   position: relative; width: 100vw; margin-left: calc(-50vw + 50%);
   min-height: 78vh; display: flex; align-items: center; justify-content: center;

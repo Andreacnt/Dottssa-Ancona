@@ -11,6 +11,8 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+st.logo("img/logo-bar.png")
+
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 
