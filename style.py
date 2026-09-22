@@ -135,9 +135,11 @@ header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--fo
 .card p { font-size: 0.95rem; color: var(--muted); }
 
 .svc {
-  background: linear-gradient(135deg, #F6FAF2, #EFF4E6); border-radius: var(--radius-card); padding: 1.2rem 1.4rem; margin: 0.5rem 0;
-  border-left: 4px solid var(--sage); box-shadow: var(--shadow-sm);
+  background: linear-gradient(135deg, #F6FAF2, #EFF4E6); border-radius: var(--radius-card); padding: 1.4rem 1.2rem; margin: 0.5rem 0;
+  border-top: 4px solid var(--sage); box-shadow: var(--shadow-sm);
   font-family: 'Inter', sans-serif; color: var(--ink);
+  min-height: 122px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center;
 }
 .svc small { color: var(--muted); }
 
