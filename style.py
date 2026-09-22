@@ -90,7 +90,7 @@ header[data-testid="stHeader"] {
   background: rgba(255,255,255,0.96); backdrop-filter: blur(10px);
   border-bottom: 3px solid var(--sage);
   box-shadow: 0 2px 12px rgba(61,90,61,0.08);
-  min-height: 74px;
+  min-height: 102px;
 }
 a[data-testid="stTopNavLink"] { text-decoration: none; padding: 8px 14px; }
 a[data-testid="stTopNavLink"] span:not([data-testid="stIconMaterial"]) {
@@ -107,7 +107,7 @@ a[data-testid="stTopNavLink"][aria-current="page"] span:not([data-testid="stIcon
   }
 }
 
-a[data-testid="stLogoLink"] img { max-height: 62px !important; width: auto; object-fit: contain; }
+a[data-testid="stLogoLink"] img { max-height: 88px !important; width: auto; object-fit: contain; }
 
 .hero {
   position: relative; width: 100vw; margin-left: calc(-50vw + 50%);
@@ -224,6 +224,8 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 
 @media (max-width: 768px) {
   .main > .block-container { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
+  header[data-testid="stHeader"] { min-height: 64px; }
+  a[data-testid="stLogoLink"] img { max-height: 52px !important; }
 
   .hero { min-height: 68vh; }
   .hero-inner h1 { font-size: 2rem; }
