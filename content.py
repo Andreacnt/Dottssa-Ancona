@@ -1,10 +1,8 @@
 # FILE DEI TESTI — qui si cambiano parole, frasi, elenchi e link del sito.
 # Il layout (colori, card, hero) vive in style.py e app.py: non serve toccarlo.
 
-SFONDO_URL = "https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/sfondo.jpg"
 PROFILO_URL = "https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/profilo.jpg"
 WA_URL = "https://wa.me/393203190704?text=Ciao%20Dott.ssa%20Ancona%2C%20vorrei%20informazioni%20per%20una%20consulenza"
-MAIL_URL = "mailto:anconagraziana@gmail.com?subject=Richiesta%20consulenza&body=Ciao%20Dott.ssa%20Ancona%2C%0A%0AVorrei%20prenotare%20una%20consulenza%20perch%C3%A9...%0A%0ANome%3A%0ATelefono%3A"
 PRENOTA_URL = "https://www.miodottore.it/profilo/graziana-ancona"
 BOX_PRENOTAZIONI_TITOLO = "Info e Prenotazioni"
 PRENOTA_BTN = "Prenota subito"
@@ -26,9 +24,7 @@ SEDE_ONLINE = "su appuntamento"
 P_IVA = "03425440736"
 
 # --- Home ---
-HERO_OVER = "Biologa Nutrizionista"
 HERO_NOME = "Dott.ssa Graziana Ancona"
-HERO_SUB = "Nutrizione personalizzata per il tuo benessere"
 
 HOME_TITOLO = "### Accompagnarti verso il tuo benessere"
 HOME_INTRO = "Ogni corpo ha una storia e ogni età ha le sue esigenze. Per questo non credo nelle soluzioni universali, ma in percorsi nutrizionali personalizzati e basati su solide basi scientifiche. Il mio obiettivo non è darti una dieta rigida, ma aiutarti a sviluppare un rapporto sereno, consapevole e sostenibile con il cibo. Insieme, trasformeremo l'alimentazione nel tuo strumento principale per vivere meglio e ritrovare il tuo equilibrio naturale."
