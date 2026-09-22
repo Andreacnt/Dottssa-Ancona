@@ -86,7 +86,11 @@ section[data-testid="stSidebar"] * { color: white; }
 [data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; }
 [data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
 
-header[data-testid="stHeader"] { background: rgba(255,255,255,0.92); backdrop-filter: blur(10px); }
+header[data-testid="stHeader"] {
+  background: rgba(233,240,227,0.94); backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(91,123,85,0.28);
+  box-shadow: 0 2px 12px rgba(61,90,61,0.08);
+}
 header[data-testid="stHeader"] nav a {
   font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.95rem;
   color: var(--forest); border-radius: var(--radius-pill); padding: 8px 16px;
