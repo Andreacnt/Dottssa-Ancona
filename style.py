@@ -90,7 +90,7 @@ header[data-testid="stHeader"] {
   background: rgba(255,255,255,0.96); backdrop-filter: blur(10px);
   border-bottom: 3px solid var(--sage);
   box-shadow: 0 2px 12px rgba(61,90,61,0.08);
-  min-height: 64px;
+  min-height: 80px;
 }
 a[data-testid="stTopNavLink"] { text-decoration: none; padding: 8px 14px; }
 a[data-testid="stTopNavLink"] span:not([data-testid="stIconMaterial"]) {
@@ -107,7 +107,7 @@ a[data-testid="stTopNavLink"][aria-current="page"] span:not([data-testid="stIcon
   }
 }
 
-a[data-testid="stLogoLink"] img { height: 52px !important; width: auto; object-fit: contain; }
+a[data-testid="stLogoLink"] img { height: 68px !important; width: auto; object-fit: contain; }
 
 .hero {
   position: relative; width: 100vw; margin-left: calc(-50vw + 50%);
