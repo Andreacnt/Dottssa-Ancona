@@ -92,23 +92,22 @@ header[data-testid="stHeader"] {
   box-shadow: 0 2px 12px rgba(61,90,61,0.08);
   min-height: 74px;
 }
-header[data-testid="stHeader"] nav a {
-  font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.85rem;
-  text-transform: uppercase; letter-spacing: 1.5px;
-  color: var(--ink); border-radius: 0; padding: 8px 14px;
+a[data-testid="stTopNavLink"] { text-decoration: none; padding: 8px 14px; }
+a[data-testid="stTopNavLink"] span {
+  font-family: 'Inter', sans-serif !important; font-weight: 600 !important; font-size: 0.85rem !important;
+  text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink) !important;
 }
-header[data-testid="stHeader"] nav a:hover { color: var(--sage); background: transparent; }
-header[data-testid="stHeader"] nav a[aria-current="page"] {
-  background: transparent; color: var(--forest);
-  border-bottom: 2px solid var(--accent);
-}
+a[data-testid="stTopNavLink"]:hover span { color: var(--sage) !important; }
+a[data-testid="stTopNavLink"][aria-current="page"] { border-bottom: 2px solid var(--accent); }
+a[data-testid="stTopNavLink"][aria-current="page"] span { color: var(--forest) !important; }
 @media (min-width: 769px) {
-  header[data-testid="stHeader"] nav {
-    position: absolute; left: 50%; transform: translateX(-50%);
+  div:has(> div[data-testid="stTopNavLinkContainer"]) {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
-[data-testid="stLogo"] img { max-height: 62px !important; width: auto; object-fit: contain; }
+a[data-testid="stLogoLink"] img { max-height: 62px !important; width: auto; object-fit: contain; }
 
 .hero {
   position: relative; width: 100vw; margin-left: calc(-50vw + 50%);
