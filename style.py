@@ -101,9 +101,9 @@ a[data-testid="stTopNavLink"]:hover span { color: var(--sage) !important; }
 a[data-testid="stTopNavLink"][aria-current="page"] { border-bottom: 2px solid var(--accent); }
 a[data-testid="stTopNavLink"][aria-current="page"] span { color: var(--forest) !important; }
 @media (min-width: 769px) {
-  div:has(> div[data-testid="stTopNavLinkContainer"]) {
-    position: absolute; left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
+  div:has(> div > div[data-testid="stTopNavLinkContainer"]) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
