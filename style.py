@@ -90,6 +90,7 @@ header[data-testid="stHeader"] {
   background: rgba(233,240,227,0.94); backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(91,123,85,0.28);
   box-shadow: 0 2px 12px rgba(61,90,61,0.08);
+  min-height: 74px;
 }
 header[data-testid="stHeader"] nav a {
   font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.95rem;
@@ -98,7 +99,7 @@ header[data-testid="stHeader"] nav a {
 header[data-testid="stHeader"] nav a:hover { background: var(--sage-pale); }
 header[data-testid="stHeader"] nav a[aria-current="page"] { background: var(--forest); color: white; }
 
-[data-testid="stLogo"] img { max-height: 46px; width: auto; object-fit: contain; }
+[data-testid="stLogo"] img { max-height: 62px !important; width: auto; object-fit: contain; }
 
 .hero {
   position: relative; width: 100vw; margin-left: calc(-50vw + 50%);
