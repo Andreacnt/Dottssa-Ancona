@@ -160,17 +160,9 @@ def pagina_contatti():
           <a href="{C.MAPS_URL}" target="_blank" style="color:#5B7B55;">Apri su Google Maps →</a></p>
           <p><strong>Online:</strong> {C.SEDE_ONLINE}</p>
         </div>
-        <div class="card" style="margin-bottom:1rem;">
+        <div class="card">
           <h3>🕐 Orari</h3>
           <p>{C.SEDE_GIORNI.capitalize()}</p>
-        </div>
-        <div class="card">
-          <h3>📞 Contattami</h3>
-          <p><strong>Cell:</strong> {C.CELL}<br>
-          <strong>Email:</strong> {C.EMAIL}</p>
-          <p><strong>Social:</strong><br>
-          🔗 <a href="{C.LINKEDIN_URL}" target="_blank" style="color:#5B7B55;">LinkedIn</a><br>
-          📸 <a href="{C.IG_URL}" target="_blank" style="color:#5B7B55;">Instagram</a></p>
         </div>
         """, unsafe_allow_html=True)
 
