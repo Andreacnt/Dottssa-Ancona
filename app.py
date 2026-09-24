@@ -7,7 +7,7 @@ from style import CUSTOM_CSS
 
 st.set_page_config(
     page_title="Dott.ssa Graziana Ancona - Biologa Nutrizionista",
-    page_icon="img/logo.jpg",
+    page_icon="img/favicon.png",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
