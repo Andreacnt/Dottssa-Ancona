@@ -59,6 +59,8 @@ h3 { font-size: 1.25rem; }
 
 p, li, .stMarkdown { font-family: 'Inter', sans-serif; color: var(--ink); line-height: 1.7; }
 
+a, a:hover, a:active, a:visited { text-decoration: none; }
+
 .page-wrap { padding: var(--sp-4) var(--sp-2); }
 
 .kicker {
@@ -150,17 +152,14 @@ a[data-testid="stLogoLink"] img { height: 68px !important; width: auto; object-f
 }
 
 .ig-btn, .btn-prenota, .btn-wa, .btn-review { transition: transform 0.2s ease, filter 0.2s ease; }
-.ig-btn:hover, .btn-prenota:hover, .btn-wa:hover, .btn-review:hover { transform: translateY(-2px); filter: brightness(1.06); }
+.ig-btn:hover, .btn-prenota:hover, .btn-wa:hover, .btn-review:hover { transform: translateY(-2px); filter: brightness(0.96); }
 .btn-prenota, .btn-wa, .btn-review {
   display: inline-block; font-family: 'Inter', sans-serif; font-weight: 700;
   padding: 13px 34px; border-radius: var(--radius-pill); text-decoration: none; font-size: 1rem; margin: 0.3rem;
 }
-.btn-review { background: white; color: var(--forest); border: 2px solid var(--accent); }
-/* "Prenota" ora usa l'accento caldo della palette: coerente col brand,
-   ma comunque distinto dai bottoni verdi secondari */
-.btn-prenota { background: var(--accent); color: #4A3A1A; }
-.btn-prenota:hover { background: var(--accent-dark); color: white; }
-.btn-wa { background: var(--wa-green); color: white; }
+.btn-review { background: #F7ECD4; color: #4A3A1A; border: 2px solid var(--accent); }
+.btn-prenota { background: #C9F2E6; color: #0B4B3F; }
+.btn-wa { background: #DCF8C6; color: #1F2C34; }
 
 img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; object-position: top center !important; border: 4px solid var(--sage) !important; }
 
