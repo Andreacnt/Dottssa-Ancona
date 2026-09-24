@@ -12,8 +12,8 @@ IMG_CONTATTI = (
     "Foto: Pexels",
 )
 IMG_CONTATTI = (
-    "https://images.unsplash.com/photo-1602709001573-8aacee2adced?q=80&w=1200&h=300&fit=crop&crop=entropy",
-    "Foto: Andreeew Hoang · Unsplash",
+    "https://images.unsplash.com/photo-1603034318372-547281a7eacf?q=80&w=1200&h=300&fit=crop&crop=entropy",
+    "Foto: Bernard Hermant · Unsplash",
 )
 IMG_SERVIZI = (
     "https://images.pexels.com/photos/16846884/pexels-photo-16846884.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=300",

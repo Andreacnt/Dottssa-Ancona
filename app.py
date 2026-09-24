@@ -179,7 +179,6 @@ def pagina_blog():
 def pagina_contatti():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     banner(*C.IMG_CONTATTI, cls="banner-home")
-    banner(*C.IMG_CONTATTI)
     st.title("Contatti")
 
     col1, col2 = st.columns([1, 1.2])
