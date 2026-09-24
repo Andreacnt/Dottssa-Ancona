@@ -9,6 +9,7 @@ IMG_HOME = (
 )
 WA_URL = "https://wa.me/393203190704?text=Ciao%20Dott.ssa%20Ancona%2C%20vorrei%20informazioni%20per%20una%20consulenza"
 PRENOTA_URL = "https://www.miodottore.it/profilo/graziana-ancona"
+RECENSIONI_URL = "https://www.miodottore.it/aggiungi-una-recensione/graziana-ancona"
 BOX_PRENOTAZIONI_TITOLO = "Info e Prenotazioni"
 PRENOTA_BTN = "Prenota subito"
 WHATSAPP_BTN = "Invia un messaggio"

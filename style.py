@@ -41,7 +41,7 @@ CUSTOM_CSS = """
   background-size: 22px 22px;
   overflow-x: clip;
 }
-.btn-prenota:active, .btn-wa:active, .ig-btn:active,
+.btn-prenota:active, .btn-wa:active, .btn-review:active, .ig-btn:active,
 a[data-testid="stTopNavLink"]:active { transform: scale(0.94); }
 
 div[data-testid="stMainBlockContainer"] {
@@ -149,12 +149,13 @@ a[data-testid="stLogoLink"] img { height: 68px !important; width: auto; object-f
   border-radius: var(--radius-pill); text-decoration: none; font-size: 1rem;
 }
 
-.ig-btn, .btn-prenota, .btn-wa { transition: transform 0.2s ease, filter 0.2s ease; }
-.ig-btn:hover, .btn-prenota:hover, .btn-wa:hover { transform: translateY(-2px); filter: brightness(1.06); }
-.btn-prenota, .btn-wa {
+.ig-btn, .btn-prenota, .btn-wa, .btn-review { transition: transform 0.2s ease, filter 0.2s ease; }
+.ig-btn:hover, .btn-prenota:hover, .btn-wa:hover, .btn-review:hover { transform: translateY(-2px); filter: brightness(1.06); }
+.btn-prenota, .btn-wa, .btn-review {
   display: inline-block; font-family: 'Inter', sans-serif; font-weight: 700;
   padding: 13px 34px; border-radius: var(--radius-pill); text-decoration: none; font-size: 1rem; margin: 0.3rem;
 }
+.btn-review { background: white; color: var(--forest); border: 2px solid var(--accent); }
 /* "Prenota" ora usa l'accento caldo della palette: coerente col brand,
    ma comunque distinto dai bottoni verdi secondari */
 .btn-prenota { background: var(--accent); color: #4A3A1A; }

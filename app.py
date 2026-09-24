@@ -201,6 +201,7 @@ def pagina_contatti():
           <div style="margin-top:1rem;">
             <a class="btn-prenota" href="{C.PRENOTA_URL}" target="_blank"><img src="{C.MIODOTTORE_LOGO}" width="18" style="vertical-align:-3px; margin-right:6px; border-radius:4px;" onerror="this.style.display='none'">{C.PRENOTA_BTN}</a>
             <a class="btn-wa" href="{C.WA_URL}" target="_blank"><img src="{C.WHATSAPP_LOGO}" width="18" style="vertical-align:-3px; margin-right:6px;" onerror="this.style.display='none'">{C.WHATSAPP_BTN}</a>
+            <br><a class="btn-review" href="{C.RECENSIONI_URL}" target="_blank">⭐ Lascia una recensione</a>
           </div>
         </div>
         """, unsafe_allow_html=True)
