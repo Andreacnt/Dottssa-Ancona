@@ -69,25 +69,17 @@ p, li, .stMarkdown { font-family: 'Inter', sans-serif; color: var(--ink); line-h
   padding: 6px 16px; margin-bottom: 0.8rem;
 }
 
-/* Animazioni: classi esplicite invece di nth-child, così l'ordine non si rompe
-   se cambia la struttura HTML. Applica .delay-1, .delay-2 ecc. agli elementi. */
 @keyframes rise {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: none; }
 }
-.rise { animation: rise 0.6s ease both; }
-.delay-1 { animation-delay: 0.08s; }
-.delay-2 { animation-delay: 0.16s; }
-.delay-3 { animation-delay: 0.24s; }
-.delay-4 { animation-delay: 0.32s; }
-.delay-5 { animation-delay: 0.40s; }
 
-.card, .post, .svc, .cta, .ig-box { animation: rise 0.55s ease both; }
+.card, .post, .svc, .ig-box { animation: rise 0.55s ease both; }
 
 section[data-testid="stSidebar"] { background: var(--forest); }
 section[data-testid="stSidebar"] * { color: white; }
 [data-testid="stSidebarNavItems"] a { padding: 10px 16px; border-radius: 12px; margin: 2px 0; }
-[data-testid="stSidebarNavItems"] a[data-testid="stSidebarNavItemActive"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
+[data-testid="stSidebarNavItems"] a[aria-current="page"] { background: rgba(255,255,255,0.15); border-left: 3px solid white; }
 
 header[data-testid="stHeader"] {
   background: rgba(255,255,255,0.96); backdrop-filter: blur(10px);
@@ -112,28 +104,6 @@ a[data-testid="stTopNavLink"][aria-current="page"] span:not([data-testid="stIcon
 
 a[data-testid="stLogoLink"] img { height: 68px !important; width: auto; object-fit: contain; }
 
-.hero {
-  position: relative; width: 100vw; margin-left: calc(-50vw + 50%);
-  min-height: 78vh; display: flex; align-items: center; justify-content: center;
-  overflow: hidden; text-align: center;
-}
-.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
-.hero-veil {
-  position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(61,90,61,0.90), rgba(91,123,85,0.75) 45%, rgba(138,154,91,0.50));
-}
-.hero-inner { position: relative; z-index: 2; padding: var(--sp-5) var(--sp-3); max-width: 820px; }
-.hero-inner .over { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.85); }
-.hero-inner h1 { font-size: 3.2rem; color: white; margin: 0.4rem 0; line-height: 1.15; }
-.hero-inner .sub { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: white; margin-bottom: var(--sp-4); }
-.btn-light {
-  display: inline-block; background: white; color: var(--forest); font-family: 'Inter', sans-serif;
-  font-weight: 700; padding: 14px 44px; border-radius: var(--radius-pill); text-decoration: none; font-size: 1.05rem;
-  box-shadow: var(--shadow-lg);
-}
-.hero-social { margin-top: var(--sp-4); }
-.hero-social a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 1.05rem; margin: 0 0.7rem; font-family: 'Inter', sans-serif; }
-
 .card {
   background: #F6FAF2; border-radius: var(--radius-card); padding: 1.6rem;
   box-shadow: var(--shadow-sm); border: 1px solid rgba(91,123,85,0.16); height: 100%;
@@ -157,20 +127,6 @@ a[data-testid="stLogoLink"] img { height: 68px !important; width: auto; object-f
 }
 .svc small { color: var(--muted); }
 
-.cta {
-  background: linear-gradient(135deg, var(--forest), var(--sage) 55%, var(--sage-light));
-  border-radius: var(--radius-card); padding: var(--sp-5) var(--sp-4); text-align: center; margin: 2.2rem 0;
-}
-.cta h2 { color: white; font-size: 1.8rem; margin-bottom: 0.6rem; }
-.cta p { color: rgba(255,255,255,0.9); max-width: 620px; margin: 0 auto 1.6rem; font-size: 1.05rem; }
-
-.step-n {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 42px; height: 42px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--sage), var(--sage-light));
-  color: white; font-weight: 700; font-family: 'Inter', sans-serif; font-size: 1.15rem;
-}
-
 .post {
   background: #F6FAF2; border-radius: var(--radius-card); box-shadow: var(--shadow-sm);
   border: 1px solid rgba(91,123,85,0.16); height: 100%;
@@ -193,8 +149,8 @@ a[data-testid="stLogoLink"] img { height: 68px !important; width: auto; object-f
   border-radius: var(--radius-pill); text-decoration: none; font-size: 1rem;
 }
 
-.btn-light, .ig-btn, .btn-prenota, .btn-wa { transition: transform 0.2s ease, filter 0.2s ease; }
-.btn-light:hover, .ig-btn:hover, .btn-prenota:hover, .btn-wa:hover { transform: translateY(-2px); filter: brightness(1.06); }
+.ig-btn, .btn-prenota, .btn-wa { transition: transform 0.2s ease, filter 0.2s ease; }
+.ig-btn:hover, .btn-prenota:hover, .btn-wa:hover { transform: translateY(-2px); filter: brightness(1.06); }
 .btn-prenota, .btn-wa {
   display: inline-block; font-family: 'Inter', sans-serif; font-weight: 700;
   padding: 13px 34px; border-radius: var(--radius-pill); text-decoration: none; font-size: 1rem; margin: 0.3rem;
@@ -207,13 +163,12 @@ a[data-testid="stLogoLink"] img { height: 68px !important; width: auto; object-f
 
 img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !important; object-fit: cover !important; object-position: top center !important; border: 4px solid var(--sage) !important; }
 
-.streamlit-expanderHeader { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--forest); background: #EFF4E6; border-radius: 12px; }
+details[data-testid="stExpander"] > summary { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--forest); background: #EFF4E6; border-radius: 12px; }
 
-[data-testid="stImage"] img { border-radius: 18px; box-shadow: var(--shadow-md); max-height: 320px; object-fit: cover; }
+.banner-img { display: block; width: 100%; height: 320px; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow-md); }
+.img-credit { text-align: center; font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
 
 .sep { text-align: center; color: var(--sage); opacity: 0.65; font-size: 1.15rem; margin: 1.2rem 0; }
-
-.hero-cta { font-size: 1.1rem; padding: 15px 46px; }
 
 .footer {
   background: var(--forest); text-align: center; padding: var(--sp-5) var(--sp-3);
@@ -227,16 +182,12 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 
 @media (max-width: 768px) {
   div[data-testid="stMainBlockContainer"] { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
-  [data-testid="column"] { min-width: 100% !important; flex: 1 1 100% !important; }
+  [data-testid="stColumn"] { min-width: 100% !important; flex: 1 1 100% !important; }
+  .banner-img { height: 200px; }
 
-  .hero { min-height: 68vh; }
-  .hero-inner h1 { font-size: 2rem; }
-  .hero-inner .sub { font-size: 1.15rem; }
   .page-wrap { padding: 1.2rem 0.4rem; }
   h1 { font-size: 1.7rem; }
   h2 { font-size: 1.35rem; }
-  .cta { padding: 2.2rem 1.2rem; }
-  .cta h2 { font-size: 1.4rem; }
 }
 </style>
 """

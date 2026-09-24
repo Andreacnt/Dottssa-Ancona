@@ -16,6 +16,15 @@ st.logo("img/logo-bar.png", size="large")
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 
+def banner(url, credit):
+    st.markdown(f"""
+    <div>
+      <img class="banner-img" src="{url}" alt="">
+      <p class="img-credit">{credit}</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+
 def pagina_home():
     st.image("img/sfondo.jpg", use_container_width=True)
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
@@ -79,7 +88,7 @@ def pagina_approccio():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="kicker">Approccio</div>', unsafe_allow_html=True)
     st.title("Il mio approccio")
-    st.image(C.IMG_APPROCCIO[0], caption=C.IMG_APPROCCIO[1], use_container_width=True)
+    banner(*C.IMG_APPROCCIO)
 
     col_a, col_b = st.columns([1.5, 1])
     with col_a:
@@ -149,7 +158,7 @@ def pagina_contatti():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.markdown('<div class="kicker">Contatti</div>', unsafe_allow_html=True)
     st.title("Contatti")
-    st.image(C.IMG_CONTATTI[0], caption=C.IMG_CONTATTI[1], use_container_width=True)
+    banner(*C.IMG_CONTATTI)
 
     col1, col2 = st.columns([1, 1.2])
     with col1:
