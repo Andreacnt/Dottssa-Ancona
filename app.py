@@ -17,18 +17,18 @@ st.logo("img/logo-bar.png", size="large")
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 
-def banner(url, credit):
+def banner(url, credit, cls="banner-img"):
     credit_html = f'<p class="img-credit">{credit}</p>' if credit else ""
     st.markdown(f"""
     <div>
-      <img class="banner-img" src="{url}" alt="">
+      <img class="{cls}" src="{url}" alt="">
       {credit_html}
     </div>
     """, unsafe_allow_html=True)
 
 
 def pagina_home():
-    banner(*C.IMG_HOME)
+    banner(*C.IMG_HOME, cls="banner-home")
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
     st.markdown(C.HOME_INTRO)
 

@@ -166,6 +166,7 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 details[data-testid="stExpander"] > summary { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--forest); background: #EFF4E6; border-radius: 12px; }
 
 .banner-img { display: block; width: 100%; height: 320px; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow-md); }
+.banner-home { display: block; width: 100%; height: auto; border-radius: 18px; box-shadow: var(--shadow-md); }
 .img-credit { text-align: center; font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
 
 .sep { text-align: center; color: var(--sage); opacity: 0.65; font-size: 1.15rem; margin: 1.2rem 0; }
