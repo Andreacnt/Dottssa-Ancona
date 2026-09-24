@@ -77,8 +77,8 @@ def pagina_servizi():
 
 def pagina_percorso():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
+    banner(*C.IMG_PERCORSO, cls="banner-home")
     st.title("Il percorso nutrizionale")
-    banner(*C.IMG_PERCORSO)
     st.markdown(C.PERCORSO_TITOLO)
     st.markdown(C.PERCORSO_HTML, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
@@ -86,6 +86,7 @@ def pagina_percorso():
 
 def pagina_approccio():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
+    banner(*C.IMG_APPROCCIO, cls="banner-home")
     st.title("Il mio approccio")
 
     col_a, col_b = st.columns([1.5, 1])

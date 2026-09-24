@@ -11,6 +11,10 @@ IMG_PERCORSO = (
     "https://images.pexels.com/photos/15319040/pexels-photo-15319040.jpeg?auto=compress&cs=tinysrgb&w=1440",
     "Foto: Pexels",
 )
+IMG_APPROCCIO = (
+    "https://images.pexels.com/photos/5622165/pexels-photo-5622165.jpeg?auto=compress&cs=tinysrgb&w=1440",
+    "Foto: Pexels",
+)
 WA_URL = "https://wa.me/393203190704?text=Ciao%20Dott.ssa%20Ancona%2C%20vorrei%20informazioni%20per%20una%20consulenza"
 PRENOTA_URL = "https://www.miodottore.it/profilo/graziana-ancona"
 RECENSIONI_URL = "https://www.miodottore.it/aggiungi-una-recensione/graziana-ancona"
