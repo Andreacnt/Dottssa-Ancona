@@ -9,23 +9,23 @@ IMG_HOME = (
 )
 IMG_CONTATTI = (
     "https://images.pexels.com/photos/6455395/pexels-photo-6455395.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=300",
-    "Foto: Pexels",
+    "",
 )
 IMG_CONTATTI = (
     "https://images.unsplash.com/photo-1603034318372-547281a7eacf?q=80&w=1200&h=300&fit=crop&crop=entropy",
-    "Foto: Bernard Hermant · Unsplash",
+    "",
 )
 IMG_SERVIZI = (
     "https://images.pexels.com/photos/16846884/pexels-photo-16846884.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=300",
-    "Foto: Pexels",
+    "",
 )
 IMG_PERCORSO = (
     "https://images.pexels.com/photos/15319040/pexels-photo-15319040.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=300",
-    "Foto: Pexels",
+    "",
 )
 IMG_APPROCCIO = (
     "https://images.pexels.com/photos/5622165/pexels-photo-5622165.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=300",
-    "Foto: Pexels",
+    "",
 )
 WA_URL = "https://wa.me/393203190704?text=Ciao%20Dott.ssa%20Ancona%2C%20vorrei%20informazioni%20per%20una%20consulenza"
 PRENOTA_URL = "https://www.miodottore.it/profilo/graziana-ancona"
