@@ -40,7 +40,6 @@ def pagina_home():
 
 def pagina_chisono():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-    st.markdown('<div class="kicker">Chi sono</div>', unsafe_allow_html=True)
     st.title("Chi Sono")
 
     col_foto, col_testo = st.columns([1, 2])
@@ -63,7 +62,6 @@ def pagina_chisono():
 
 def pagina_servizi():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-    st.markdown('<div class="kicker">Servizi</div>', unsafe_allow_html=True)
     st.title("Di cosa mi occupo")
     st.markdown(C.SERVIZI_INTRO)
 
@@ -78,7 +76,6 @@ def pagina_servizi():
 
 def pagina_percorso():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-    st.markdown('<div class="kicker">Percorso</div>', unsafe_allow_html=True)
     st.title("Il percorso nutrizionale")
     st.markdown(C.PERCORSO_TITOLO)
     st.markdown(C.PERCORSO_HTML, unsafe_allow_html=True)
@@ -87,7 +84,6 @@ def pagina_percorso():
 
 def pagina_approccio():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-    st.markdown('<div class="kicker">Approccio</div>', unsafe_allow_html=True)
     st.title("Il mio approccio")
 
     col_a, col_b = st.columns([1.5, 1])
@@ -123,7 +119,6 @@ def pagina_approccio():
 
 def pagina_blog():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-    st.markdown('<div class="kicker">Blog</div>', unsafe_allow_html=True)
     st.title("Mini Guide dal Blog")
     st.markdown(C.BLOG_SOTTOTITOLO)
 
@@ -156,7 +151,6 @@ def pagina_blog():
 
 def pagina_contatti():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
-    st.markdown('<div class="kicker">Contatti</div>', unsafe_allow_html=True)
     st.title("Contatti")
 
     col1, col2 = st.columns([1, 1.2])
