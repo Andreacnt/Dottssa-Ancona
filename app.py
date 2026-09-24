@@ -164,10 +164,10 @@ def pagina_blog():
 
     st.markdown(f"""
     <div class="ig-box">
-      <div style="font-size:2rem; margin-bottom:0.4rem;">📸</div>
-      <h3>Seguimi su Instagram</h3>
+      <div style="margin-bottom:0.6rem;"><img src="{C.IG_LOGO}" width="44" alt="Instagram" onerror="this.style.display='none'"></div>
+      <h3>{C.BLOG_FOLLOW_TITOLO}</h3>
       <p style="color:#636E72; margin-bottom:1.2rem;">{C.IG_HANDLE} — consigli e approfondimenti</p>
-      <a class="ig-btn" href="{C.IG_URL}" target="_blank">Seguimi su Instagram</a>
+      <a class="ig-btn" href="{C.IG_URL}" target="_blank"><img src="{C.IG_LOGO_WHITE}" width="18" style="vertical-align:-3px; margin-right:6px;" onerror="this.style.display='none'">{C.BLOG_FOLLOW_BTN}</a>
     </div>
     """, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
