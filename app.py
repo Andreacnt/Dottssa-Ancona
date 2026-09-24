@@ -28,7 +28,6 @@ def banner(url, credit, cls="banner-img"):
 
 
 def pagina_home():
-    banner(*C.IMG_HOME, cls="banner-home")
     st.title("Dott.ssa Graziana Ancona — Biologa Nutrizionista")
     st.markdown(C.HOME_INTRO)
 
@@ -37,6 +36,9 @@ def pagina_home():
 
     💻 **Consulenze online:** {C.SEDE_ONLINE}
     """)
+
+    st.markdown("")
+    banner(*C.IMG_HOME, cls="banner-home")
 
 
 def pagina_chisono():
