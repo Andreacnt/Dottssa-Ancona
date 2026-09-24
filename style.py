@@ -119,13 +119,13 @@ a[data-testid="stLogoLink"] img { height: 68px !important; width: auto; object-f
 .card p { font-size: 0.95rem; color: var(--muted); }
 
 .svc {
-  background: linear-gradient(135deg, #F6FAF2, #EFF4E6); border-radius: var(--radius-card); padding: 1.4rem 1.2rem; margin: 0.5rem 0;
-  border-top: 4px solid var(--sage); box-shadow: var(--shadow-sm);
-  font-family: 'Inter', sans-serif; color: var(--ink);
-  min-height: 122px; display: flex; flex-direction: column;
+  background: linear-gradient(135deg, #F6FAF2, #EFF4E6); border-radius: 12px; padding: 0.85rem 1rem; margin: 0.4rem 0;
+  border-top: 3px solid var(--sage); box-shadow: var(--shadow-sm);
+  font-family: 'Inter', sans-serif; font-size: 0.92rem; color: var(--ink);
+  min-height: 104px; display: flex; flex-direction: column;
   align-items: center; justify-content: center; text-align: center;
 }
-.svc small { color: var(--muted); }
+.svc small { color: var(--muted); font-size: 0.8rem; }
 
 .post {
   background: #F6FAF2; border-radius: var(--radius-card); box-shadow: var(--shadow-sm);
