@@ -45,7 +45,7 @@ CUSTOM_CSS = """
 a[data-testid="stTopNavLink"]:active { transform: scale(0.94); }
 
 div[data-testid="stMainBlockContainer"] {
-  max-width: 1080px; margin-left: auto; margin-right: auto; padding-top: 0 !important;
+  max-width: 1080px; margin-left: auto; margin-right: auto; padding-top: 5.5rem !important;
   background: rgba(255,255,255,0.62);
   border-radius: 0 0 28px 28px;
   padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem;
