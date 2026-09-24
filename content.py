@@ -112,6 +112,8 @@ pilastri = [
 
 # --- Blog ---
 BLOG_SOTTOTITOLO = "Segui i miei consigli su Instagram e trovali qui raccolti per te."
+BLOG_FEED_TITOLO = "I miei ultimi post"
+IG_EMBED = "https://www.instagram.com/nutri_su_insta/embed"
 
 mini_guide = [
     ("Latte, latti fermentati e yogurt: simili, ma non uguali",

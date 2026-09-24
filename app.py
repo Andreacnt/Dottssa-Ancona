@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import datetime
+import urllib.request
 
 import content as C
 from style import CUSTOM_CSS
@@ -117,14 +118,37 @@ def pagina_approccio():
     st.markdown('</div>', unsafe_allow_html=True)
 
 
+@st.cache_data(ttl=6 * 3600)
+def ig_embed_ok():
+    try:
+        req = urllib.request.Request(C.IG_EMBED, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            if r.status != 200:
+                return False
+            xfo = (r.headers.get("X-Frame-Options") or "").upper()
+            csp = (r.headers.get("Content-Security-Policy") or "").lower()
+            if "DENY" in xfo or "SAMEORIGIN" in xfo:
+                return False
+            if "frame-ancestors" in csp:
+                return False
+            return True
+    except Exception:
+        return False
+
+
 def pagina_blog():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
     st.title("Mini Guide dal Blog")
     st.markdown(C.BLOG_SOTTOTITOLO)
 
-    if not C.mini_guide:
-        st.info("Aggiungi i tuoi post nella lista `mini_guide` in content.py per farli apparire qui.")
-    else:
+    st.markdown(f"### {C.BLOG_FEED_TITOLO}")
+    if ig_embed_ok():
+        st.markdown(
+            f'<iframe src="{C.IG_EMBED}" width="100%" height="620" '
+            'frameborder="0" scrolling="yes" style="border:0; border-radius:16px; background:white;"></iframe>',
+            unsafe_allow_html=True,
+        )
+    elif C.mini_guide:
         cols = st.columns(3)
         for i, (titolo, descrizione, url) in enumerate(C.mini_guide):
             with cols[i % 3]:
