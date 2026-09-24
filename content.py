@@ -7,6 +7,10 @@ IMG_HOME = (
     "https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/sfondo.jpg",
     "",
 )
+IMG_SERVIZI = (
+    "https://images.pexels.com/photos/16846884/pexels-photo-16846884.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=300",
+    "Foto: Pexels",
+)
 IMG_PERCORSO = (
     "https://images.pexels.com/photos/15319040/pexels-photo-15319040.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=300",
     "Foto: Pexels",

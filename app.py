@@ -63,6 +63,7 @@ def pagina_chisono():
 
 def pagina_servizi():
     st.markdown('<div class="page-wrap">', unsafe_allow_html=True)
+    banner(*C.IMG_SERVIZI, cls="banner-home")
     st.title("Di cosa mi occupo")
     st.markdown(C.SERVIZI_INTRO)
 
