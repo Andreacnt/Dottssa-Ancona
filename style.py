@@ -165,7 +165,7 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 
 details[data-testid="stExpander"] > summary { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--forest); background: #EFF4E6; border-radius: 12px; }
 
-.banner-img { display: block; width: 100%; height: 320px; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow-md); }
+.banner-img { display: block; width: 100%; aspect-ratio: 4 / 1; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow-md); }
 .banner-home { display: block; width: 100%; height: auto; border-radius: 18px; box-shadow: var(--shadow-md); }
 .img-credit { text-align: center; font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
 
@@ -184,7 +184,6 @@ details[data-testid="stExpander"] > summary { font-family: 'Playfair Display', s
 @media (max-width: 768px) {
   div[data-testid="stMainBlockContainer"] { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
   [data-testid="stColumn"] { min-width: 100% !important; flex: 1 1 100% !important; }
-  .banner-img { height: 200px; }
 
   .page-wrap { padding: 1.2rem 0.4rem; }
   h1 { font-size: 1.7rem; }
