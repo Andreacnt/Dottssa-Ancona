@@ -44,8 +44,8 @@ CUSTOM_CSS = """
 .btn-prenota:active, .btn-wa:active, .ig-btn:active,
 a[data-testid="stTopNavLink"]:active { transform: scale(0.94); }
 
-.main > .block-container {
-  max-width: 1080px; padding-top: 0 !important;
+div[data-testid="stMainBlockContainer"] {
+  max-width: 1080px; margin-left: auto; margin-right: auto; padding-top: 0 !important;
   background: rgba(255,255,255,0.62);
   border-radius: 0 0 28px 28px;
   padding-left: 2rem; padding-right: 2rem; padding-bottom: 2rem;
@@ -226,7 +226,7 @@ img[src*="profilo.jpg"] { border-radius: 50% !important; aspect-ratio: 1 !import
 .footer-social a { font-size: 1.05rem; margin: 0 0.6rem; }
 
 @media (max-width: 768px) {
-  .main > .block-container { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
+  div[data-testid="stMainBlockContainer"] { padding-left: 0.8rem; padding-right: 0.8rem; border-radius: 0 0 20px 20px; }
   [data-testid="column"] { min-width: 100% !important; flex: 1 1 100% !important; }
 
   .hero { min-height: 68vh; }
