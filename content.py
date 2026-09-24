@@ -1,7 +1,12 @@
 # FILE DEI TESTI — qui si cambiano parole, frasi, elenchi e link del sito.
 # Il layout (colori, card, hero) vive in style.py e app.py: non serve toccarlo.
 
+SFONDO_URL = "https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/sfondo.jpg"
 PROFILO_URL = "https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/profilo.jpg"
+IMG_HOME = (
+    "https://raw.githubusercontent.com/Andreacnt/Dottssa-Ancona/main/img/sfondo.jpg",
+    "",
+)
 WA_URL = "https://wa.me/393203190704?text=Ciao%20Dott.ssa%20Ancona%2C%20vorrei%20informazioni%20per%20una%20consulenza"
 PRENOTA_URL = "https://www.miodottore.it/profilo/graziana-ancona"
 BOX_PRENOTAZIONI_TITOLO = "Info e Prenotazioni"
